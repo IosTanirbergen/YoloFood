@@ -15,6 +15,8 @@ struct Strings {
         static let secondTitle = "Lorem ipsum"
         static let thirdTitle = "Lorem ipsum"
         
+        static let btnTitle = "Далее"
+        
         /// subTitle
         static let firstSubTitle = "Lorem ipsum dolor sit amet,\n consectetur adipiscing elit."
         static let secondSubTitle = "Lorem ipsum dolor sit amet,\n consectetur adipiscing elit."

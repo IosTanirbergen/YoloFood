@@ -17,6 +17,9 @@ final class OnboardingViewController: BaseViewController {
         return cv
     }()
     
+    // MARK: - Coordinator Delegate
+    var delegate: OnboardingCoordinator?
+    
     private let pageControl: CustomPageController = {
         let pc = CustomPageController()
         pc.currentPage = 0
@@ -31,6 +34,18 @@ final class OnboardingViewController: BaseViewController {
         return pc
     }()
     
+    private let button: CustomButton = {
+        let btn = CustomButton(btnType: .system,
+                               font: .bold,
+                               btnText: Strings.Onboarding.btnTitle,
+                               textColor: .white,
+                               btnColor: .green,
+                               fontSize: 18.0)
+        btn.addTarget(self, action: #selector(handleShowMainFlow), for: .touchUpInside)
+        btn.alpha = 0
+        return btn
+    }()
+    
     private let facade = OnboardingFacade()
 
     override func viewDidLoad() {
@@ -42,7 +57,7 @@ final class OnboardingViewController: BaseViewController {
 extension OnboardingViewController {
     
     private func setUI() {
-        [onboardingCollectionView, pageControl].forEach {
+        [onboardingCollectionView, pageControl, button].forEach {
             view.addSubview($0)
         }
         
@@ -57,6 +72,12 @@ extension OnboardingViewController {
             $0.centerX.equalToSuperview()
             $0.height.equalTo(20.0)
             $0.width.equalTo(view.frame.size.width)
+        }
+        
+        button.snp.makeConstraints {
+            $0.top.equalTo(pageControl.safeAreaLayoutGuide.snp.bottom).offset(32.0)
+            $0.leading.trailing.equalToSuperview().inset(16.0)
+            $0.height.equalTo(48.0)
         }
         
         configureCollectionView()
@@ -104,6 +125,16 @@ extension OnboardingViewController: OnboardingCollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let scroll = scrollView.contentOffset.x / view.frame.width
         pageControl.currentPage = Int(scroll)
+        facade.showButtonIfNeeded(page: pageControl.currentPage, btn: button)
     }
     
+}
+
+// MARK: - Flow Methods
+extension OnboardingViewController {
+    
+    @objc private func handleShowMainFlow() {
+        print(#function)
+        delegate?.showTabBarFlow()
+    }
 }
