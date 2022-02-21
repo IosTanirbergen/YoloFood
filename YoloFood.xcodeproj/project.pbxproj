@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4A0DCD927BD438A0069A8A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DCD827BD438A0069A8A5 /* AppDelegate.swift */; };
+		A4A0DCDD27BD438B0069A8A5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DCDC27BD438B0069A8A5 /* OnboardingViewController.swift */; };
+		A4A0DCE327BD438B0069A8A5 /* YoloFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DCE127BD438B0069A8A5 /* YoloFood.xcdatamodeld */; };
+		A4A0DCE527BD438D0069A8A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A0DCE427BD438D0069A8A5 /* Assets.xcassets */; };
+		A4A0DCE827BD438D0069A8A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A0DCE627BD438D0069A8A5 /* LaunchScreen.storyboard */; };
+		A4A0DCF327BD438D0069A8A5 /* YoloFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DCF227BD438D0069A8A5 /* YoloFoodTests.swift */; };
+		A4A0DCFD27BD438D0069A8A5 /* YoloFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DCFC27BD438D0069A8A5 /* YoloFoodUITests.swift */; };
+		A4A0DCFF27BD438D0069A8A5 /* YoloFoodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DCFE27BD438D0069A8A5 /* YoloFoodUITestsLaunchTests.swift */; };
+		A4AB997B27C10ABD00D446E7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB997A27C10ABD00D446E7 /* BaseViewController.swift */; };
+		A4AB997E27C10C8200D446E7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A4AB997D27C10C8200D446E7 /* SnapKit */; };
+		A4AB998027C11F2600D446E7 /* AppCoordinator .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB997F27C11F2600D446E7 /* AppCoordinator .swift */; };
+		A4AB998527C11FF200D446E7 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB998427C11FF200D446E7 /* OnboardingCoordinator.swift */; };
+		A4AB998927C1213300D446E7 /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB998727C1213300D446E7 /* RouterImp.swift */; };
+		A4AB998A27C1213300D446E7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB998827C1213300D446E7 /* Router.swift */; };
+		A4AB998E27C121C500D446E7 /* Presentations .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB998D27C121C500D446E7 /* Presentations .swift */; };
+		A4AB999127C129E000D446E7 /* AppDelegate&CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB999027C129E000D446E7 /* AppDelegate&CoreData.swift */; };
+		A4AB999827C3969A00D446E7 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB999727C3969A00D446E7 /* OnboardingCollectionViewCell.swift */; };
+		A4AB999B27C39D2100D446E7 /* OnboardingFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB999A27C39D2100D446E7 /* OnboardingFacade.swift */; };
+		A4AB999E27C39DA200D446E7 /* ImageConstants .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB999D27C39DA200D446E7 /* ImageConstants .swift */; };
+		A4AB99A027C39E4900D446E7 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB999F27C39E4900D446E7 /* StringConstants.swift */; };
+		A4AB99A327C3A9C900D446E7 /* CustomPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99A227C3A9C900D446E7 /* CustomPageController.swift */; };
+		A4AB99A627C3AACD00D446E7 /* Fonts .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99A527C3AACD00D446E7 /* Fonts .swift */; };
+		A4AB99AA27C3AB0500D446E7 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99A927C3AB0500D446E7 /* CustomLabel.swift */; };
+		A4AB99AC27C3AEEC00D446E7 /* Colors .swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99AB27C3AEEC00D446E7 /* Colors .swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4A0DCEF27BD438D0069A8A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4A0DCCD27BD438A0069A8A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A0DCD427BD438A0069A8A5;
+			remoteInfo = YoloFood;
+		};
+		A4A0DCF927BD438D0069A8A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4A0DCCD27BD438A0069A8A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A0DCD427BD438A0069A8A5;
+			remoteInfo = YoloFood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4A0DCD527BD438A0069A8A5 /* YoloFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoloFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A0DCD827BD438A0069A8A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4A0DCDC27BD438B0069A8A5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A4A0DCE227BD438B0069A8A5 /* YoloFood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YoloFood.xcdatamodel; sourceTree = "<group>"; };
+		A4A0DCE427BD438D0069A8A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4A0DCE727BD438D0069A8A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4A0DCE927BD438D0069A8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A0DCEE27BD438D0069A8A5 /* YoloFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoloFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A0DCF227BD438D0069A8A5 /* YoloFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloFoodTests.swift; sourceTree = "<group>"; };
+		A4A0DCF827BD438D0069A8A5 /* YoloFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoloFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A0DCFC27BD438D0069A8A5 /* YoloFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloFoodUITests.swift; sourceTree = "<group>"; };
+		A4A0DCFE27BD438D0069A8A5 /* YoloFoodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoloFoodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4AB997A27C10ABD00D446E7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A4AB997F27C11F2600D446E7 /* AppCoordinator .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCoordinator .swift"; sourceTree = "<group>"; };
+		A4AB998427C11FF200D446E7 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		A4AB998727C1213300D446E7 /* RouterImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
+		A4AB998827C1213300D446E7 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A4AB998D27C121C500D446E7 /* Presentations .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presentations .swift"; sourceTree = "<group>"; };
+		A4AB999027C129E000D446E7 /* AppDelegate&CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate&CoreData.swift"; sourceTree = "<group>"; };
+		A4AB999727C3969A00D446E7 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4AB999A27C39D2100D446E7 /* OnboardingFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFacade.swift; sourceTree = "<group>"; };
+		A4AB999D27C39DA200D446E7 /* ImageConstants .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageConstants .swift"; sourceTree = "<group>"; };
+		A4AB999F27C39E4900D446E7 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		A4AB99A227C3A9C900D446E7 /* CustomPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageController.swift; sourceTree = "<group>"; };
+		A4AB99A527C3AACD00D446E7 /* Fonts .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts .swift"; sourceTree = "<group>"; };
+		A4AB99A927C3AB0500D446E7 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		A4AB99AB27C3AEEC00D446E7 /* Colors .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors .swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4A0DCD227BD438A0069A8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AB997E27C10C8200D446E7 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0DCEB27BD438D0069A8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0DCF527BD438D0069A8A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4A0DCCC27BD438A0069A8A5 = {
+			isa = PBXGroup;
+			children = (
+				A4A0DCD727BD438A0069A8A5 /* YoloFood */,
+				A4A0DCF127BD438D0069A8A5 /* YoloFoodTests */,
+				A4A0DCFB27BD438D0069A8A5 /* YoloFoodUITests */,
+				A4A0DCD627BD438A0069A8A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4A0DCD627BD438A0069A8A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0DCD527BD438A0069A8A5 /* YoloFood.app */,
+				A4A0DCEE27BD438D0069A8A5 /* YoloFoodTests.xctest */,
+				A4A0DCF827BD438D0069A8A5 /* YoloFoodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4A0DCD727BD438A0069A8A5 /* YoloFood */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0DD0B27BD43A20069A8A5 /* Application Layer */,
+				A4A0DD0C27BD43AD0069A8A5 /* Flows  */,
+				A4A0DD0E27BD43C10069A8A5 /* Buisness Logic Layer */,
+				A4A0DD0D27BD43B90069A8A5 /* Core Layer */,
+				A4A0DCE427BD438D0069A8A5 /* Assets.xcassets */,
+				A4A0DCE627BD438D0069A8A5 /* LaunchScreen.storyboard */,
+				A4A0DCE927BD438D0069A8A5 /* Info.plist */,
+				A4A0DCE127BD438B0069A8A5 /* YoloFood.xcdatamodeld */,
+			);
+			path = YoloFood;
+			sourceTree = "<group>";
+		};
+		A4A0DCF127BD438D0069A8A5 /* YoloFoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0DCF227BD438D0069A8A5 /* YoloFoodTests.swift */,
+			);
+			path = YoloFoodTests;
+			sourceTree = "<group>";
+		};
+		A4A0DCFB27BD438D0069A8A5 /* YoloFoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0DCFC27BD438D0069A8A5 /* YoloFoodUITests.swift */,
+				A4A0DCFE27BD438D0069A8A5 /* YoloFoodUITestsLaunchTests.swift */,
+			);
+			path = YoloFoodUITests;
+			sourceTree = "<group>";
+		};
+		A4A0DD0B27BD43A20069A8A5 /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB998F27C129D300D446E7 /* CoreData */,
+				A4AB998627C1213300D446E7 /* Router */,
+				A4A0DCD827BD438A0069A8A5 /* AppDelegate.swift */,
+				A4AB997F27C11F2600D446E7 /* AppCoordinator .swift */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		A4A0DD0C27BD43AD0069A8A5 /* Flows  */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0DD0F27BD51420069A8A5 /* Onboarding */,
+				A4A0DD1027BD514E0069A8A5 /* Authorization */,
+				A4A0DD1127BD515A0069A8A5 /* Question List */,
+				A4A0DD1227BD51A10069A8A5 /* Home */,
+			);
+			path = "Flows ";
+			sourceTree = "<group>";
+		};
+		A4A0DD0D27BD43B90069A8A5 /* Core Layer */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB998B27C121AB00D446E7 /* Extention + Helps */,
+				A4AB997927C10AAE00D446E7 /* BaseViews */,
+				A4AB999C27C39D9300D446E7 /* Constants */,
+			);
+			path = "Core Layer";
+			sourceTree = "<group>";
+		};
+		A4A0DD0E27BD43C10069A8A5 /* Buisness Logic Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Buisness Logic Layer";
+			sourceTree = "<group>";
+		};
+		A4A0DD0F27BD51420069A8A5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB998327C11FE600D446E7 /* Coordinator */,
+				A4AB999927C39D1300D446E7 /* Facade */,
+				A4AB998227C11FE100D446E7 /* View */,
+				A4AB998127C11FDB00D446E7 /* ViewModel */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A4A0DD1027BD514E0069A8A5 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		A4A0DD1127BD515A0069A8A5 /* Question List */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB999527C137BA00D446E7 /* Coordinator */,
+				A4AB999327C137AF00D446E7 /* View */,
+				A4AB999227C137A600D446E7 /* ViewModel */,
+			);
+			path = "Question List";
+			sourceTree = "<group>";
+		};
+		A4A0DD1227BD51A10069A8A5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A4AB997927C10AAE00D446E7 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB997A27C10ABD00D446E7 /* BaseViewController.swift */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		A4AB998127C11FDB00D446E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A4AB998227C11FE100D446E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB999627C3968A00D446E7 /* Cells */,
+				A4A0DCDC27BD438B0069A8A5 /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4AB998327C11FE600D446E7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB998427C11FF200D446E7 /* OnboardingCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A4AB998627C1213300D446E7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB998727C1213300D446E7 /* RouterImp.swift */,
+				A4AB998827C1213300D446E7 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A4AB998B27C121AB00D446E7 /* Extention + Helps */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB99A727C3AAF000D446E7 /* Custom */,
+				A4AB99A427C3AAC600D446E7 /* Fonts  */,
+				A4AB998C27C121B100D446E7 /* Presentations  */,
+			);
+			path = "Extention + Helps";
+			sourceTree = "<group>";
+		};
+		A4AB998C27C121B100D446E7 /* Presentations  */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB998D27C121C500D446E7 /* Presentations .swift */,
+			);
+			path = "Presentations ";
+			sourceTree = "<group>";
+		};
+		A4AB998F27C129D300D446E7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB999027C129E000D446E7 /* AppDelegate&CoreData.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A4AB999227C137A600D446E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A4AB999327C137AF00D446E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4AB999527C137BA00D446E7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A4AB999627C3968A00D446E7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB999727C3969A00D446E7 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A4AB999927C39D1300D446E7 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB999A27C39D2100D446E7 /* OnboardingFacade.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		A4AB999C27C39D9300D446E7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB999D27C39DA200D446E7 /* ImageConstants .swift */,
+				A4AB999F27C39E4900D446E7 /* StringConstants.swift */,
+				A4AB99AB27C3AEEC00D446E7 /* Colors .swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A4AB99A127C3A9B800D446E7 /* CustomPageController */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB99A227C3A9C900D446E7 /* CustomPageController.swift */,
+			);
+			path = CustomPageController;
+			sourceTree = "<group>";
+		};
+		A4AB99A427C3AAC600D446E7 /* Fonts  */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB99A527C3AACD00D446E7 /* Fonts .swift */,
+			);
+			path = "Fonts ";
+			sourceTree = "<group>";
+		};
+		A4AB99A727C3AAF000D446E7 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB99A127C3A9B800D446E7 /* CustomPageController */,
+				A4AB99A927C3AB0500D446E7 /* CustomLabel.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4A0DCD427BD438A0069A8A5 /* YoloFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A0DD0227BD438D0069A8A5 /* Build configuration list for PBXNativeTarget "YoloFood" */;
+			buildPhases = (
+				A4A0DCD127BD438A0069A8A5 /* Sources */,
+				A4A0DCD227BD438A0069A8A5 /* Frameworks */,
+				A4A0DCD327BD438A0069A8A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoloFood;
+			packageProductDependencies = (
+				A4AB997D27C10C8200D446E7 /* SnapKit */,
+			);
+			productName = YoloFood;
+			productReference = A4A0DCD527BD438A0069A8A5 /* YoloFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4A0DCED27BD438D0069A8A5 /* YoloFoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A0DD0527BD438D0069A8A5 /* Build configuration list for PBXNativeTarget "YoloFoodTests" */;
+			buildPhases = (
+				A4A0DCEA27BD438D0069A8A5 /* Sources */,
+				A4A0DCEB27BD438D0069A8A5 /* Frameworks */,
+				A4A0DCEC27BD438D0069A8A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4A0DCF027BD438D0069A8A5 /* PBXTargetDependency */,
+			);
+			name = YoloFoodTests;
+			productName = YoloFoodTests;
+			productReference = A4A0DCEE27BD438D0069A8A5 /* YoloFoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4A0DCF727BD438D0069A8A5 /* YoloFoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A0DD0827BD438D0069A8A5 /* Build configuration list for PBXNativeTarget "YoloFoodUITests" */;
+			buildPhases = (
+				A4A0DCF427BD438D0069A8A5 /* Sources */,
+				A4A0DCF527BD438D0069A8A5 /* Frameworks */,
+				A4A0DCF627BD438D0069A8A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4A0DCFA27BD438D0069A8A5 /* PBXTargetDependency */,
+			);
+			name = YoloFoodUITests;
+			productName = YoloFoodUITests;
+			productReference = A4A0DCF827BD438D0069A8A5 /* YoloFoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4A0DCCD27BD438A0069A8A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A4A0DCD427BD438A0069A8A5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A4A0DCED27BD438D0069A8A5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A4A0DCD427BD438A0069A8A5;
+					};
+					A4A0DCF727BD438D0069A8A5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A4A0DCD427BD438A0069A8A5;
+					};
+				};
+			};
+			buildConfigurationList = A4A0DCD027BD438A0069A8A5 /* Build configuration list for PBXProject "YoloFood" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4A0DCCC27BD438A0069A8A5;
+			packageReferences = (
+				A4AB997C27C10C8200D446E7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = A4A0DCD627BD438A0069A8A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4A0DCD427BD438A0069A8A5 /* YoloFood */,
+				A4A0DCED27BD438D0069A8A5 /* YoloFoodTests */,
+				A4A0DCF727BD438D0069A8A5 /* YoloFoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4A0DCD327BD438A0069A8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A0DCE827BD438D0069A8A5 /* LaunchScreen.storyboard in Resources */,
+				A4A0DCE527BD438D0069A8A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0DCEC27BD438D0069A8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0DCF627BD438D0069A8A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4A0DCD127BD438A0069A8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AB99A327C3A9C900D446E7 /* CustomPageController.swift in Sources */,
+				A4AB99A627C3AACD00D446E7 /* Fonts .swift in Sources */,
+				A4AB999E27C39DA200D446E7 /* ImageConstants .swift in Sources */,
+				A4AB999127C129E000D446E7 /* AppDelegate&CoreData.swift in Sources */,
+				A4AB998A27C1213300D446E7 /* Router.swift in Sources */,
+				A4AB99AA27C3AB0500D446E7 /* CustomLabel.swift in Sources */,
+				A4AB99AC27C3AEEC00D446E7 /* Colors .swift in Sources */,
+				A4AB998027C11F2600D446E7 /* AppCoordinator .swift in Sources */,
+				A4AB998527C11FF200D446E7 /* OnboardingCoordinator.swift in Sources */,
+				A4A0DCE327BD438B0069A8A5 /* YoloFood.xcdatamodeld in Sources */,
+				A4AB999B27C39D2100D446E7 /* OnboardingFacade.swift in Sources */,
+				A4AB998E27C121C500D446E7 /* Presentations .swift in Sources */,
+				A4AB997B27C10ABD00D446E7 /* BaseViewController.swift in Sources */,
+				A4AB99A027C39E4900D446E7 /* StringConstants.swift in Sources */,
+				A4AB998927C1213300D446E7 /* RouterImp.swift in Sources */,
+				A4A0DCDD27BD438B0069A8A5 /* OnboardingViewController.swift in Sources */,
+				A4A0DCD927BD438A0069A8A5 /* AppDelegate.swift in Sources */,
+				A4AB999827C3969A00D446E7 /* OnboardingCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0DCEA27BD438D0069A8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A0DCF327BD438D0069A8A5 /* YoloFoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0DCF427BD438D0069A8A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A0DCFF27BD438D0069A8A5 /* YoloFoodUITestsLaunchTests.swift in Sources */,
+				A4A0DCFD27BD438D0069A8A5 /* YoloFoodUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4A0DCF027BD438D0069A8A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A0DCD427BD438A0069A8A5 /* YoloFood */;
+			targetProxy = A4A0DCEF27BD438D0069A8A5 /* PBXContainerItemProxy */;
+		};
+		A4A0DCFA27BD438D0069A8A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A0DCD427BD438A0069A8A5 /* YoloFood */;
+			targetProxy = A4A0DCF927BD438D0069A8A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4A0DCE627BD438D0069A8A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A0DCE727BD438D0069A8A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4A0DD0027BD438D0069A8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4A0DD0127BD438D0069A8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4A0DD0327BD438D0069A8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67V6V79892;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoloFood/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoloFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A4A0DD0427BD438D0069A8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67V6V79892;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoloFood/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoloFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A4A0DD0627BD438D0069A8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67V6V79892;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoloFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoloFood.app/YoloFood";
+			};
+			name = Debug;
+		};
+		A4A0DD0727BD438D0069A8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67V6V79892;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoloFoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoloFood.app/YoloFood";
+			};
+			name = Release;
+		};
+		A4A0DD0927BD438D0069A8A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67V6V79892;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoloFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YoloFood;
+			};
+			name = Debug;
+		};
+		A4A0DD0A27BD438D0069A8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67V6V79892;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YoloFoodUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YoloFood;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4A0DCD027BD438A0069A8A5 /* Build configuration list for PBXProject "YoloFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A0DD0027BD438D0069A8A5 /* Debug */,
+				A4A0DD0127BD438D0069A8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A0DD0227BD438D0069A8A5 /* Build configuration list for PBXNativeTarget "YoloFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A0DD0327BD438D0069A8A5 /* Debug */,
+				A4A0DD0427BD438D0069A8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A0DD0527BD438D0069A8A5 /* Build configuration list for PBXNativeTarget "YoloFoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A0DD0627BD438D0069A8A5 /* Debug */,
+				A4A0DD0727BD438D0069A8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A0DD0827BD438D0069A8A5 /* Build configuration list for PBXNativeTarget "YoloFoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A0DD0927BD438D0069A8A5 /* Debug */,
+				A4A0DD0A27BD438D0069A8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4AB997C27C10C8200D446E7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4AB997D27C10C8200D446E7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4AB997C27C10C8200D446E7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A4A0DCE127BD438B0069A8A5 /* YoloFood.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A4A0DCE227BD438B0069A8A5 /* YoloFood.xcdatamodel */,
+			);
+			currentVersion = A4A0DCE227BD438B0069A8A5 /* YoloFood.xcdatamodel */;
+			path = YoloFood.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A4A0DCCD27BD438A0069A8A5 /* Project object */;
+}
