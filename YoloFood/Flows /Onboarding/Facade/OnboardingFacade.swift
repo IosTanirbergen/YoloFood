@@ -27,4 +27,13 @@ final class OnboardingFacade: NSObject {
     func setOnboardingItems() -> [OnboardingItems] {
         return onboardingData
     }
+    
+    func showButtonIfNeeded(page: Int, btn: UIButton) {
+        if page == 1 {
+            UIView.animate(withDuration: 0.3) {
+                btn.alpha = 1
+                btn.layoutIfNeeded()
+            }
+        }
+    }
 }
