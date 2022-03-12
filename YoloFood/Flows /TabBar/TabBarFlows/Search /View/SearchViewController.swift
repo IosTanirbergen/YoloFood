@@ -29,7 +29,6 @@ final class SearchViewController: BaseViewController {
 extension SearchViewController {
     
     func configureUI() {
-        view.backgroundColor = .green
         navigationItem.searchController = search
         
         [search].forEach {

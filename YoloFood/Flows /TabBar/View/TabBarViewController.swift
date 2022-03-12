@@ -13,12 +13,31 @@ final class TabBarViewController: UITabBarController {
     private let tabBarView = TabBarView()
     private let facade = TabBarFacade()
     
+    lazy var yoloTitle: UILabel = {
+        $0.text = "YoloFood"
+        $0.font = UIFont.systemFont(ofSize: 48, weight: .heavy)
+        $0.textColor = .green
+        return $0
+    }(UILabel())
+    
     // MARK: - coordinator delegate
     var coordinatorDelegate: TabBarCoordinator?
     
     override func viewDidLoad() {
         setUI()
         setupMiddleButton()
+        configureTabBar()
+        
+        view.addSubview(yoloTitle)
+        yoloTitle.snp.makeConstraints {
+            $0.centerX.centerY.equalToSuperview()
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [unowned self] in
+            UIView.animate(withDuration: 1.5) {
+                yoloTitle.alpha = 0
+            }
+        }
     }
 }
 
@@ -46,5 +65,9 @@ extension TabBarViewController {
 extension TabBarViewController {
     @objc fileprivate func handleTappedCenterButton() {
         self.selectedIndex = 2
+    }
+    
+    private func configureTabBar() {
+        navigationController?.navigationBar.isHidden = true
     }
 }

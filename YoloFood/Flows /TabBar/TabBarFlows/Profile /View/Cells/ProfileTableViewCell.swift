@@ -20,17 +20,17 @@ class ProfileTableViewCell: UITableViewCell {
     
     lazy var phoneNumberTextFiled: CustomTextField = {
         $0.placeholder = "Введите номер телефона"
-        $0.layer.borderColor = UIColor.black.cgColor
+        $0.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.4).cgColor
         $0.backgroundColor = .white
+        $0.layer.borderWidth = 1.0
         return $0
-    }(CustomTextField(padding: 12))
+    }(CustomTextField(padding: 16))
     
     lazy var continueButton: UIButton = {
         $0.setTitle("Продолжить", font: UIFont.systemFont(ofSize: 16, weight: .bold), color: .white)
-        $0.layer.borderColor = UIColor.green.cgColor
         $0.backgroundColor = .green
         return $0
-    }(UIButton())
+    }(UIButton(type: .system))
     
 // MARK: - Lifecyle:
     
@@ -50,11 +50,10 @@ extension ProfileTableViewCell {
     
     func configureUI() {
         [titleLabel, phoneNumberTextFiled, continueButton].forEach {
-            addSubview($0)
+            contentView.addSubview($0)
         }
         
         [phoneNumberTextFiled, continueButton].forEach {
-            $0.layer.borderWidth = 1
             $0.layer.cornerRadius = 8
         }
         
@@ -70,13 +69,13 @@ extension ProfileTableViewCell {
         phoneNumberTextFiled.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom).offset(32)
             $0.left.right.equalToSuperview().inset(16)
-            $0.height.equalTo(40)
+            $0.height.equalTo(48)
         }
         
         continueButton.snp.makeConstraints {
             $0.top.equalTo(phoneNumberTextFiled.snp.bottom).offset(12)
             $0.left.right.equalToSuperview().inset(16)
-            $0.height.equalTo(40)
+            $0.height.equalTo(52)
         }
     }
 }
