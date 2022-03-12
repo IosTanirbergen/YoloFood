@@ -23,6 +23,7 @@ class ServicesCollectionViewCell: UICollectionViewCell {
         let lb = UILabel()
         lb.textAlignment = .center
         lb.font = Fonts.medium(size: 15.0)
+        lb.numberOfLines = 0
         return lb
     }()
     
@@ -57,12 +58,18 @@ class ServicesCollectionViewCell: UICollectionViewCell {
 extension ServicesCollectionViewCell: ConfigureView {
     
     func setView() {
-        [stackGridItems].forEach {
+        [gridImage, gridTitle].forEach {
             contentView.addSubview($0)
         }
         
-        stackGridItems.snp.makeConstraints {
-            $0.centerX.centerY.equalToSuperview()
+        gridImage.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(26)
+        }
+        
+        gridTitle.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(gridImage.safeAreaLayoutGuide.snp.bottom).offset(6.0)
         }
     }
     

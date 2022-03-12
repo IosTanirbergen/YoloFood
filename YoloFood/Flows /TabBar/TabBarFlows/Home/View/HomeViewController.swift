@@ -13,13 +13,15 @@ final class HomeViewController: BaseViewController {
     var delegate: HomeCoordinator?
     
     // MARK: - HomeFacade
-    private let factory = HomeFactory()
+    let factory = HomeFactory()
     private let facade = HomeViewControllerFacade()
+    
+    // MARK: - Header View
     
     private let storiesView = StoriesView()
     
-    private let tableView: UITableView = {
-        let lb = UITableView(frame: .zero)
+    let tableView: UITableView = {
+        let lb = UITableView(frame: .zero, style: .grouped)
         return lb
     }()
 
@@ -27,7 +29,6 @@ final class HomeViewController: BaseViewController {
         super.viewDidLoad()
         setUI()
         showQuestionListIfNeeded()
-        showStoriesIfNeeded()
     }
 }
 
@@ -58,10 +59,10 @@ extension HomeViewController {
     }
     
     private func showQuestionListIfNeeded() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
-            guard let self = self else { return }
-            //self.delegate?.showQuestionListFlow()
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+//            guard let self = self else { return }
+//            //self.delegate?.showQuestionListFlow()
+//        }
     }
     
     private func configureTableView() {
@@ -70,14 +71,27 @@ extension HomeViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         
-        [ServicesTableViewCell.self, ListNewsTableViewCell.self].forEach {
+        [ListNewsTableViewCell.self].forEach {
             tableView.register($0, forCellReuseIdentifier: $0.description())
         }
+        
     }
     
     private func showStoriesIfNeeded() {
         storiesView.tappedStories = { val in
-            print(val)
+           
+        }
+    }
+}
+
+// MARK: - Configure Header View
+extension HomeViewController {
+    
+    @objc fileprivate func updateHeaderIfNeeded(notification: Notification) {
+        if (notification.object != nil) {
+            tableView.tableHeaderView = UIView()
+            tableView.reloadData()
+            tableView.layoutIfNeeded()
         }
     }
 }

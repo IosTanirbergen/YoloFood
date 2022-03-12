@@ -13,6 +13,8 @@
 		A43F476727DC7FB100F9A624 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */; };
 		A43F476927DC89D700F9A624 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */; };
 		A43F476B27DD027600F9A624 /* ListNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */; };
+		A43F477027DD410300F9A624 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476F27DD410300F9A624 /* NotificationName.swift */; };
+		A43F477227DD576F00F9A624 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F477127DD576F00F9A624 /* UIView.swift */; };
 		A4489A1127C5205E002325B1 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4489A1027C5205E002325B1 /* StoriesView.swift */; };
 		A4489A1427C520A2002325B1 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4489A1327C520A2002325B1 /* HomeFactory.swift */; };
 		A4489A1627C52B32002325B1 /* Table&CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4489A1527C52B32002325B1 /* Table&CollectionView.swift */; };
@@ -70,6 +72,7 @@
 		A4AB99EE27C3F84700D446E7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99ED27C3F84700D446E7 /* SearchViewController.swift */; };
 		A4AB99F027C3F84E00D446E7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99EF27C3F84E00D446E7 /* SearchViewModel.swift */; };
 		A4AB99F227C3F85700D446E7 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99F127C3F85700D446E7 /* SearchCoordinator.swift */; };
+		A4B6DC6E27DD5BA30073597B /* ConstStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC6D27DD5BA30073597B /* ConstStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,8 @@
 		A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewsTableViewCell.swift; sourceTree = "<group>"; };
+		A43F476F27DD410300F9A624 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		A43F477127DD576F00F9A624 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A4489A1027C5205E002325B1 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		A4489A1327C520A2002325B1 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
 		A4489A1527C52B32002325B1 /* Table&CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Table&CollectionView.swift"; sourceTree = "<group>"; };
@@ -156,6 +161,7 @@
 		A4AB99ED27C3F84700D446E7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A4AB99EF27C3F84E00D446E7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		A4AB99F127C3F85700D446E7 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		A4B6DC6D27DD5BA30073597B /* ConstStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +209,7 @@
 		A43F476327DC7F4E00F9A624 /* Services View */ = {
 			isa = PBXGroup;
 			children = (
+				A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */,
 				A43F476527DC7F9E00F9A624 /* Cells */,
 			);
 			path = "Services View";
@@ -211,7 +218,6 @@
 		A43F476527DC7F9E00F9A624 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */,
 				A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */,
 			);
 			path = Cells;
@@ -522,6 +528,8 @@
 				A4AB999F27C39E4900D446E7 /* StringConstants.swift */,
 				A4AB99AB27C3AEEC00D446E7 /* Colors .swift */,
 				A4489A1527C52B32002325B1 /* Table&CollectionView.swift */,
+				A43F476F27DD410300F9A624 /* NotificationName.swift */,
+				A4B6DC6D27DD5BA30073597B /* ConstStrings.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -558,6 +566,7 @@
 			children = (
 				A4AB99B027C3DC2E00D446E7 /* UIButton.swift */,
 				A4AB99B227C3DC6400D446E7 /* String.swift */,
+				A43F477127DD576F00F9A624 /* UIView.swift */,
 			);
 			path = "Extentions ";
 			sourceTree = "<group>";
@@ -939,6 +948,7 @@
 				A4AB999E27C39DA200D446E7 /* ImageConstants .swift in Sources */,
 				8E62803B27DD3B4400081375 /* ProfileFactory.swift in Sources */,
 				A4AB999127C129E000D446E7 /* AppDelegate&CoreData.swift in Sources */,
+				A43F477027DD410300F9A624 /* NotificationName.swift in Sources */,
 				A4AB998A27C1213300D446E7 /* Router.swift in Sources */,
 				A4AB99DC27C3F7BF00D446E7 /* ProfileCoordinator.swift in Sources */,
 				A4AB99E227C3F7EA00D446E7 /* MyPlansCoordinator.swift in Sources */,
@@ -946,6 +956,7 @@
 				A4AB99BC27C3EA5000D446E7 /* HomeViewController.swift in Sources */,
 				A4AB99AA27C3AB0500D446E7 /* CustomLabel.swift in Sources */,
 				A46A1C8027C8D78E00931FD5 /* HomeViewControllerFacade.swift in Sources */,
+				A43F477227DD576F00F9A624 /* UIView.swift in Sources */,
 				A4AB99AC27C3AEEC00D446E7 /* Colors .swift in Sources */,
 				A4AB99E627C3F80700D446E7 /* MyPlansViewModel.swift in Sources */,
 				A4AB998027C11F2600D446E7 /* AppCoordinator .swift in Sources */,
@@ -961,6 +972,7 @@
 				A4AB997B27C10ABD00D446E7 /* BaseViewController.swift in Sources */,
 				A4AB99A027C39E4900D446E7 /* StringConstants.swift in Sources */,
 				A4AB99B127C3DC2E00D446E7 /* UIButton.swift in Sources */,
+				A4B6DC6E27DD5BA30073597B /* ConstStrings.swift in Sources */,
 				A4489A2D27C67B55002325B1 /* Stories.swift in Sources */,
 				A4AB99EE27C3F84700D446E7 /* SearchViewController.swift in Sources */,
 				A43F476B27DD027600F9A624 /* ListNewsTableViewCell.swift in Sources */,

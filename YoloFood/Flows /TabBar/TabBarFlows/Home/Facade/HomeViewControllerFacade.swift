@@ -17,4 +17,10 @@ final class HomeViewControllerFacade {
             item(indexPath)
         }
     }
+    
+    func hideHeaderIfNeeded() {
+
+    }
+    
+    
 }
