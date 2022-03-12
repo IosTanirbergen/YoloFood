@@ -9,12 +9,26 @@ import Foundation
 import UIKit
 
 struct ImagesConstants {
+    /// Navigation
+    struct NavigationImages {
+        static let close = UIImage(named: "close")?.withRenderingMode(.alwaysOriginal)
+    }
     
     /// Onboarding
     struct OnboardingImages {
         static let first = "onboardingFirst"
         static let second = "onboardingSecond"
         static let third = "onboardingThird"
+    }
+    
+    /// Grid
+    struct GridImages {
+        static let myOrder = "my-order"
+        static let myTest = "my-test"
+        static let myFitness = "my-fitness"
+        static let myHistoryOrders = "my-history-orders"
+        static let mySchedule = "my-schedule"
+        static let myHistory = "my-history"
     }
     
     /// TabBar

@@ -7,10 +7,78 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+final class HomeViewController: BaseViewController {
+    
+    // MARK: - Coordinator Delegate
+    var delegate: HomeCoordinator?
+    
+    // MARK: - HomeFacade
+    private let factory = HomeFactory()
+    private let facade = HomeViewControllerFacade()
+    
+    private let storiesView = StoriesView()
+    
+    private let tableView: UITableView = {
+        let lb = UITableView(frame: .zero)
+        return lb
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUI()
+        showQuestionListIfNeeded()
+        showStoriesIfNeeded()
     }
 }
+
+// MARK: - ConfigureUI
+extension HomeViewController {
+    
+    private func setUI() {
+        configureUI()
+        configureTableView()
+    }
+    
+    private func configureUI() {
+        
+        [storiesView, tableView].forEach {
+            view.addSubview($0)
+        }
+        
+        storiesView.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            $0.leading.trailing.equalToSuperview()
+            $0.height.equalTo(view.frame.size.height / 6.0)
+        }
+        
+        tableView.snp.makeConstraints {
+            $0.top.equalTo(storiesView.safeAreaLayoutGuide.snp.bottom).offset(8.0)
+            $0.leading.trailing.bottom.equalToSuperview()
+        }
+    }
+    
+    private func showQuestionListIfNeeded() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+            guard let self = self else { return }
+            //self.delegate?.showQuestionListFlow()
+        }
+    }
+    
+    private func configureTableView() {
+        tableView.backgroundColor = .clear
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.separatorStyle = .none
+        
+        [ServicesTableViewCell.self, ListNewsTableViewCell.self].forEach {
+            tableView.register($0, forCellReuseIdentifier: $0.description())
+        }
+    }
+    
+    private func showStoriesIfNeeded() {
+        storiesView.tappedStories = { val in
+            print(val)
+        }
+    }
+}
+

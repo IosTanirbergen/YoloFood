@@ -21,7 +21,7 @@ class TabBarView: UITabBar {
         
         shapeLayer.shadowOffset = CGSize(width:0, height:0)
         shapeLayer.shadowRadius = 10
-        shapeLayer.shadowColor = UIColor.gray.withAlphaComponent(0.6).cgColor
+        shapeLayer.shadowColor = UIColor.lightGray.withAlphaComponent(0.7).cgColor
         shapeLayer.shadowOpacity = 0.5
 
         if let oldShapeLayer = self.shapeLayer {

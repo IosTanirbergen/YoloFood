@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 import SnapKit
 
+protocol ConfigureView {
+    func setView()
+    func configureView()
+}
+
 class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -20,6 +25,6 @@ class BaseViewController: UIViewController {
 extension BaseViewController {
     
     private func configureView() {
-        view.backgroundColor = .white
+        view.backgroundColor = .yoloBackgroundColor
     }
 }

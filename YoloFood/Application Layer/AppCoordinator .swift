@@ -15,7 +15,7 @@ protocol Coordinator {
 
 extension Coordinator {
     func coordinate(to coordinator: Coordinator) {
-        return coordinator.start()
+        coordinator.start()
     }
 }
 
@@ -23,16 +23,22 @@ final class AppCoordinator: Coordinator {
     
     // MARK: - Init
     var window: UIWindow
+    var logOut = String()
+    private let navigationController = UINavigationController()
     
-    init(window: UIWindow = UIWindow()) {
+    init(window: UIWindow) {
         self.window = window
     }
     
     func start() {
-        let navigationController = UINavigationController()
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
-        let onboardingCoordinator = OnboardingCoordinator(navigationController: navigationController)
+        if logOut == "true" {
+            let onboardingCoordinator = OnboardingCoordinator(navigationController: navigationController)
+            coordinate(to: onboardingCoordinator)
+            return
+        }
+        let onboardingCoordinator = TabBarCoordinator(navigationController: navigationController)
         coordinate(to: onboardingCoordinator)
     }
 }

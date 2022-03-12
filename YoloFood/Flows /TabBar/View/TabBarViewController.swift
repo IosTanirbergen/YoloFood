@@ -13,8 +13,10 @@ final class TabBarViewController: UITabBarController {
     private let tabBarView = TabBarView()
     private let facade = TabBarFacade()
     
+    // MARK: - coordinator delegate
+    var coordinatorDelegate: TabBarCoordinator?
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
         setUI()
         setupMiddleButton()
     }

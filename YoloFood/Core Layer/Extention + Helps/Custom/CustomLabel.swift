@@ -14,7 +14,7 @@ enum Font {
     case regular
 }
 
-class CustomTextField: UILabel {
+class CustomLabel: UILabel {
     
     private let textSize: Float
     private let color: UIColor
@@ -35,6 +35,8 @@ class CustomTextField: UILabel {
     }
     
     private func configure() {
+        
+        textColor = color
         
         switch fonts.self {
         case .regular:

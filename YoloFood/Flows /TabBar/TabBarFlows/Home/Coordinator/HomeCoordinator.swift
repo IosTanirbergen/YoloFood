@@ -8,6 +8,16 @@
 import Foundation
 import UIKit
 
+protocol ShowQuestionListFlow {
+    func showQuestionList()
+}
+
+protocol ShowStoriesDetailFlow {
+    func showStoriesDetail()
+}
+
+typealias HomeCoordinatorOutputProtocol = ShowQuestionListFlow & ShowStoriesDetailFlow
+
 class HomeCoordinator: Coordinator {
     
     private let navigationController: UINavigationController
@@ -18,6 +28,21 @@ class HomeCoordinator: Coordinator {
     
     func start() {
         let homeViewController = HomeViewController()
+        homeViewController.delegate = self 
         navigationController.pushViewController(homeViewController, animated: true)
+    }
+}
+
+extension HomeCoordinator: HomeCoordinatorOutputProtocol {
+    
+    // MARK: - FlowMethods
+    func showQuestionList() {
+        let questionListCoordinator = QuestionListCoordinator(navigationController: navigationController)
+        coordinate(to: questionListCoordinator)
+    }
+    
+    func showStoriesDetail() {
+        let storiesDetailCoordinator = StoriesDetailViewCoordinator(navigationController: navigationController)
+        coordinate(to: storiesDetailCoordinator)
     }
 }
