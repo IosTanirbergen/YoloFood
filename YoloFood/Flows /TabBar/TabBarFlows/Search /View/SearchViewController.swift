@@ -8,10 +8,39 @@
 import UIKit
 
 final class SearchViewController: BaseViewController {
+    
+// MARK: UI Elements:
+    
+    fileprivate lazy var search: UISearchController = {
+        return $0
+    }(UISearchController())
 
+// MARK: - Lifecycle:
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        configureUI()
     }
 
+}
+
+// MARK: - ConfigureUI:
+
+extension SearchViewController {
+    
+    func configureUI() {
+        view.backgroundColor = .green
+        navigationItem.searchController = search
+        
+        [search].forEach {
+            $0.searchBar.placeholder = "Поиск"
+            $0.searchBar.setValue("Отмена", forKey: "cancelButtonText")
+        }
+        
+        makeConstraints()
+    }
+    
+    func makeConstraints() {
+       
+    }
 }
