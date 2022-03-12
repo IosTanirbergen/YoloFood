@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E62803827DD3B0C00081375 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */; };
+		8E62803B27DD3B4400081375 /* ProfileFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803A27DD3B4400081375 /* ProfileFactory.swift */; };
+		8E62803D27DD43B000081375 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803C27DD43AF00081375 /* CustomTextField.swift */; };
 		A43F476727DC7FB100F9A624 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */; };
 		A43F476927DC89D700F9A624 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */; };
 		A43F476B27DD027600F9A624 /* ListNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */; };
@@ -87,6 +90,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		8E62803A27DD3B4400081375 /* ProfileFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFactory.swift; sourceTree = "<group>"; };
+		8E62803C27DD43AF00081375 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -178,6 +184,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E62803627DD3A9D00081375 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8E62803927DD3B1C00081375 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				8E62803A27DD3B4400081375 /* ProfileFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		A43F476327DC7F4E00F9A624 /* Services View */ = {
 			isa = PBXGroup;
 			children = (
@@ -525,6 +547,7 @@
 			children = (
 				A4AB99A127C3A9B800D446E7 /* CustomPageController */,
 				A4AB99A927C3AB0500D446E7 /* CustomLabel.swift */,
+				8E62803C27DD43AF00081375 /* CustomTextField.swift */,
 				A4AB99AD27C3D84200D446E7 /* CustomButton.swift */,
 			);
 			path = Custom;
@@ -656,6 +679,7 @@
 		A4AB99CE27C3F76D00D446E7 /* Profile  */ = {
 			isa = PBXGroup;
 			children = (
+				8E62803927DD3B1C00081375 /* Factory */,
 				A4AB99DA27C3F7B500D446E7 /* Coordinator */,
 				A4AB99D927C3F7B000D446E7 /* View */,
 				A4AB99D827C3F7AB00D446E7 /* ViewModel */,
@@ -746,6 +770,7 @@
 		A4AB99D927C3F7B000D446E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E62803627DD3A9D00081375 /* Cells */,
 				A4AB99DD27C3F7D100D446E7 /* ProfileViewController.swift */,
 			);
 			path = View;
@@ -898,7 +923,9 @@
 				A4AB99A327C3A9C900D446E7 /* CustomPageController.swift in Sources */,
 				A46A1C7D27C8D45F00931FD5 /* StoriesDetailCollectionViewCell.swift in Sources */,
 				A4AB99F227C3F85700D446E7 /* SearchCoordinator.swift in Sources */,
+				8E62803827DD3B0C00081375 /* ProfileTableViewCell.swift in Sources */,
 				A44FD6FC27C40CF00036FE6F /* QuestionListViewController.swift in Sources */,
+				8E62803D27DD43B000081375 /* CustomTextField.swift in Sources */,
 				A4489A1927C52C97002325B1 /* StoriesCollectionViewCell.swift in Sources */,
 				A4AB99AE27C3D84200D446E7 /* CustomButton.swift in Sources */,
 				A4AB99C727C3F08700D446E7 /* TabBarView.swift in Sources */,
@@ -910,6 +937,7 @@
 				A4AB99A627C3AACD00D446E7 /* Fonts .swift in Sources */,
 				A44FD6FA27C40C900036FE6F /* QuestionListCoordinator.swift in Sources */,
 				A4AB999E27C39DA200D446E7 /* ImageConstants .swift in Sources */,
+				8E62803B27DD3B4400081375 /* ProfileFactory.swift in Sources */,
 				A4AB999127C129E000D446E7 /* AppDelegate&CoreData.swift in Sources */,
 				A4AB998A27C1213300D446E7 /* Router.swift in Sources */,
 				A4AB99DC27C3F7BF00D446E7 /* ProfileCoordinator.swift in Sources */,
