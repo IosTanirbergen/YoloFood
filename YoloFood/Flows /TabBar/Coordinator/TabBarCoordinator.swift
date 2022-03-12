@@ -16,11 +16,11 @@ class TabBarCoordinator: Coordinator {
     /// *
     //** tabBarFlows
     /// *
-    private let homeViewController = HomeViewController()
-    private let searchViewController = SearchViewController()
-    private let orderViewController = OrderViewController()
-    private let myPlansviewController = MyPlansViewController()
-    private let profileViewController = ProfileViewController()
+    private let homeViewController = UINavigationController()
+    private let searchViewController = UINavigationController()
+    private let orderViewController = UINavigationController()
+    private let myPlansviewController = UINavigationController()
+    private let profileViewController = UINavigationController()
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -39,19 +39,19 @@ extension TabBarCoordinator {
     private func configureTabBar() {
         
         /// home
-        let homeCoordinator = HomeCoordinator(navigationController: navigationController)
-        let searchCoordinator = SearchCoordinator(navigationController: navigationController)
-        let orderCoordinator = OrderCoordinator(navigationController: navigationController)
-        let myPlansCoordinator = MyPlansCoordinator(navigationController: navigationController)
-        let profileCoordinator = ProfileCoordinator(navigationController: navigationController)
+        let homeCoordinator = HomeCoordinator(navigationController: homeViewController)
+        let searchCoordinator = SearchCoordinator(navigationController: searchViewController)
+        let orderCoordinator = OrderCoordinator(navigationController: orderViewController)
+        let myPlansCoordinator = MyPlansCoordinator(navigationController: myPlansviewController)
+        let profileCoordinator = ProfileCoordinator(navigationController: profileViewController)
         
-        tabBarController.setViewControllers([
+        tabBarController.viewControllers = [
             homeViewController,
             searchViewController,
             orderViewController,
             myPlansviewController,
             profileViewController
-        ], animated: true)
+        ]
         
         configureTabBarIcons()
         

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43F476727DC7FB100F9A624 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */; };
+		A43F476927DC89D700F9A624 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */; };
+		A43F476B27DD027600F9A624 /* ListNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */; };
+		A4489A1127C5205E002325B1 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4489A1027C5205E002325B1 /* StoriesView.swift */; };
+		A4489A1427C520A2002325B1 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4489A1327C520A2002325B1 /* HomeFactory.swift */; };
+		A4489A1627C52B32002325B1 /* Table&CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4489A1527C52B32002325B1 /* Table&CollectionView.swift */; };
+		A4489A1927C52C97002325B1 /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4489A1827C52C97002325B1 /* StoriesCollectionViewCell.swift */; };
+		A4489A2A27C67824002325B1 /* HomeTableViewDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4489A2927C67824002325B1 /* HomeTableViewDataSources.swift */; };
+		A4489A2D27C67B55002325B1 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4489A2C27C67B55002325B1 /* Stories.swift */; };
+		A44FD6FA27C40C900036FE6F /* QuestionListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44FD6F927C40C900036FE6F /* QuestionListCoordinator.swift */; };
+		A44FD6FC27C40CF00036FE6F /* QuestionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44FD6FB27C40CF00036FE6F /* QuestionListViewController.swift */; };
+		A46A1C7927C8CFF100931FD5 /* StoriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A1C7827C8CFF100931FD5 /* StoriesDetailViewController.swift */; };
+		A46A1C7B27C8D01E00931FD5 /* StoriesDetailViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A1C7A27C8D01E00931FD5 /* StoriesDetailViewCoordinator.swift */; };
+		A46A1C7D27C8D45F00931FD5 /* StoriesDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A1C7C27C8D45F00931FD5 /* StoriesDetailCollectionViewCell.swift */; };
+		A46A1C8027C8D78E00931FD5 /* HomeViewControllerFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A1C7F27C8D78E00931FD5 /* HomeViewControllerFacade.swift */; };
 		A4A0DCD927BD438A0069A8A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DCD827BD438A0069A8A5 /* AppDelegate.swift */; };
 		A4A0DCDD27BD438B0069A8A5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DCDC27BD438B0069A8A5 /* OnboardingViewController.swift */; };
 		A4A0DCE327BD438B0069A8A5 /* YoloFood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DCE127BD438B0069A8A5 /* YoloFood.xcdatamodeld */; };
@@ -72,6 +87,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
+		A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
+		A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewsTableViewCell.swift; sourceTree = "<group>"; };
+		A4489A1027C5205E002325B1 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		A4489A1327C520A2002325B1 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		A4489A1527C52B32002325B1 /* Table&CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Table&CollectionView.swift"; sourceTree = "<group>"; };
+		A4489A1827C52C97002325B1 /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4489A2927C67824002325B1 /* HomeTableViewDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewDataSources.swift; sourceTree = "<group>"; };
+		A4489A2C27C67B55002325B1 /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
+		A44FD6F927C40C900036FE6F /* QuestionListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListCoordinator.swift; sourceTree = "<group>"; };
+		A44FD6FB27C40CF00036FE6F /* QuestionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewController.swift; sourceTree = "<group>"; };
+		A46A1C7827C8CFF100931FD5 /* StoriesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesDetailViewController.swift; sourceTree = "<group>"; };
+		A46A1C7A27C8D01E00931FD5 /* StoriesDetailViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesDetailViewCoordinator.swift; sourceTree = "<group>"; };
+		A46A1C7C27C8D45F00931FD5 /* StoriesDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		A46A1C7F27C8D78E00931FD5 /* HomeViewControllerFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerFacade.swift; sourceTree = "<group>"; };
 		A4A0DCD527BD438A0069A8A5 /* YoloFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoloFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A0DCD827BD438A0069A8A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4A0DCDC27BD438B0069A8A5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +178,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A43F476327DC7F4E00F9A624 /* Services View */ = {
+			isa = PBXGroup;
+			children = (
+				A43F476527DC7F9E00F9A624 /* Cells */,
+			);
+			path = "Services View";
+			sourceTree = "<group>";
+		};
+		A43F476527DC7F9E00F9A624 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */,
+				A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A43F476C27DD03A200F9A624 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A4489A0F27C52051002325B1 /* Stories View */ = {
+			isa = PBXGroup;
+			children = (
+				A4489A1727C52C26002325B1 /* Cells */,
+				A4489A1027C5205E002325B1 /* StoriesView.swift */,
+				A46A1C7827C8CFF100931FD5 /* StoriesDetailViewController.swift */,
+			);
+			path = "Stories View";
+			sourceTree = "<group>";
+		};
+		A4489A1227C52093002325B1 /* Factory  */ = {
+			isa = PBXGroup;
+			children = (
+				A4489A1327C520A2002325B1 /* HomeFactory.swift */,
+			);
+			path = "Factory ";
+			sourceTree = "<group>";
+		};
+		A4489A1727C52C26002325B1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A4489A1827C52C97002325B1 /* StoriesCollectionViewCell.swift */,
+				A46A1C7C27C8D45F00931FD5 /* StoriesDetailCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A4489A2827C67812002325B1 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				A4489A2927C67824002325B1 /* HomeTableViewDataSources.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		A4489A2B27C67B47002325B1 /* Static Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4489A2C27C67B55002325B1 /* Stories.swift */,
+			);
+			path = "Static Models";
+			sourceTree = "<group>";
+		};
+		A46A1C7E27C8D77F00931FD5 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				A46A1C7F27C8D78E00931FD5 /* HomeViewControllerFacade.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
 		A4A0DCCC27BD438A0069A8A5 = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +341,7 @@
 		A4A0DD0E27BD43C10069A8A5 /* Buisness Logic Layer */ = {
 			isa = PBXGroup;
 			children = (
+				A4489A2B27C67B47002325B1 /* Static Models */,
 			);
 			path = "Buisness Logic Layer";
 			sourceTree = "<group>";
@@ -271,6 +378,8 @@
 			isa = PBXGroup;
 			children = (
 				A4AB99B827C3EA0500D446E7 /* Coordinator */,
+				A46A1C7E27C8D77F00931FD5 /* Facade */,
+				A4489A1227C52093002325B1 /* Factory  */,
 				A4AB99B727C3E9FD00D446E7 /* View */,
 				A4AB99B627C3E9F500D446E7 /* ViewModel */,
 			);
@@ -355,6 +464,7 @@
 		A4AB999327C137AF00D446E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A44FD6FB27C40CF00036FE6F /* QuestionListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,6 +472,7 @@
 		A4AB999527C137BA00D446E7 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				A44FD6F927C40C900036FE6F /* QuestionListCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -388,6 +499,7 @@
 				A4AB999D27C39DA200D446E7 /* ImageConstants .swift */,
 				A4AB999F27C39E4900D446E7 /* StringConstants.swift */,
 				A4AB99AB27C3AEEC00D446E7 /* Colors .swift */,
+				A4489A1527C52B32002325B1 /* Table&CollectionView.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -437,6 +549,10 @@
 		A4AB99B727C3E9FD00D446E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A43F476C27DD03A200F9A624 /* Cells */,
+				A4489A2827C67812002325B1 /* DataSources */,
+				A4489A0F27C52051002325B1 /* Stories View */,
+				A43F476327DC7F4E00F9A624 /* Services View */,
 				A4AB99BB27C3EA5000D446E7 /* HomeViewController.swift */,
 			);
 			path = View;
@@ -446,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				A4AB99B927C3EA2900D446E7 /* HomeCoordinator.swift */,
+				A46A1C7A27C8D01E00931FD5 /* StoriesDetailViewCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -779,41 +896,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4AB99A327C3A9C900D446E7 /* CustomPageController.swift in Sources */,
+				A46A1C7D27C8D45F00931FD5 /* StoriesDetailCollectionViewCell.swift in Sources */,
 				A4AB99F227C3F85700D446E7 /* SearchCoordinator.swift in Sources */,
+				A44FD6FC27C40CF00036FE6F /* QuestionListViewController.swift in Sources */,
+				A4489A1927C52C97002325B1 /* StoriesCollectionViewCell.swift in Sources */,
 				A4AB99AE27C3D84200D446E7 /* CustomButton.swift in Sources */,
 				A4AB99C727C3F08700D446E7 /* TabBarView.swift in Sources */,
+				A43F476727DC7FB100F9A624 /* ServicesTableViewCell.swift in Sources */,
 				A4AB99EC27C3F82000D446E7 /* OrderViewModel.swift in Sources */,
+				A4489A1427C520A2002325B1 /* HomeFactory.swift in Sources */,
 				A4AB99F027C3F84E00D446E7 /* SearchViewModel.swift in Sources */,
 				A4AB99C327C3EE1000D446E7 /* TabBarCoordinator.swift in Sources */,
 				A4AB99A627C3AACD00D446E7 /* Fonts .swift in Sources */,
+				A44FD6FA27C40C900036FE6F /* QuestionListCoordinator.swift in Sources */,
 				A4AB999E27C39DA200D446E7 /* ImageConstants .swift in Sources */,
 				A4AB999127C129E000D446E7 /* AppDelegate&CoreData.swift in Sources */,
 				A4AB998A27C1213300D446E7 /* Router.swift in Sources */,
 				A4AB99DC27C3F7BF00D446E7 /* ProfileCoordinator.swift in Sources */,
 				A4AB99E227C3F7EA00D446E7 /* MyPlansCoordinator.swift in Sources */,
+				A46A1C7B27C8D01E00931FD5 /* StoriesDetailViewCoordinator.swift in Sources */,
 				A4AB99BC27C3EA5000D446E7 /* HomeViewController.swift in Sources */,
 				A4AB99AA27C3AB0500D446E7 /* CustomLabel.swift in Sources */,
+				A46A1C8027C8D78E00931FD5 /* HomeViewControllerFacade.swift in Sources */,
 				A4AB99AC27C3AEEC00D446E7 /* Colors .swift in Sources */,
 				A4AB99E627C3F80700D446E7 /* MyPlansViewModel.swift in Sources */,
 				A4AB998027C11F2600D446E7 /* AppCoordinator .swift in Sources */,
 				A4AB99DE27C3F7D100D446E7 /* ProfileViewController.swift in Sources */,
 				A4AB998527C11FF200D446E7 /* OnboardingCoordinator.swift in Sources */,
 				A4AB99CA27C3F0E100D446E7 /* TabBarFacade .swift in Sources */,
+				A46A1C7927C8CFF100931FD5 /* StoriesDetailViewController.swift in Sources */,
 				A4A0DCE327BD438B0069A8A5 /* YoloFood.xcdatamodeld in Sources */,
+				A4489A2A27C67824002325B1 /* HomeTableViewDataSources.swift in Sources */,
 				A4AB99C527C3EE1B00D446E7 /* TabBarViewController.swift in Sources */,
 				A4AB999B27C39D2100D446E7 /* OnboardingFacade.swift in Sources */,
 				A4AB998E27C121C500D446E7 /* Presentations .swift in Sources */,
 				A4AB997B27C10ABD00D446E7 /* BaseViewController.swift in Sources */,
 				A4AB99A027C39E4900D446E7 /* StringConstants.swift in Sources */,
 				A4AB99B127C3DC2E00D446E7 /* UIButton.swift in Sources */,
+				A4489A2D27C67B55002325B1 /* Stories.swift in Sources */,
 				A4AB99EE27C3F84700D446E7 /* SearchViewController.swift in Sources */,
+				A43F476B27DD027600F9A624 /* ListNewsTableViewCell.swift in Sources */,
 				A4AB998927C1213300D446E7 /* RouterImp.swift in Sources */,
 				A4AB99E427C3F7F400D446E7 /* MyPlansViewController.swift in Sources */,
+				A43F476927DC89D700F9A624 /* ServicesCollectionViewCell.swift in Sources */,
+				A4489A1627C52B32002325B1 /* Table&CollectionView.swift in Sources */,
 				A4AB99E827C3F80F00D446E7 /* OrderCoordinator.swift in Sources */,
 				A4AB99E027C3F7DB00D446E7 /* ProfileViewModel.swift in Sources */,
 				A4A0DCDD27BD438B0069A8A5 /* OnboardingViewController.swift in Sources */,
 				A4AB99B327C3DC6400D446E7 /* String.swift in Sources */,
 				A4AB99EA27C3F81600D446E7 /* OrderViewController.swift in Sources */,
+				A4489A1127C5205E002325B1 /* StoriesView.swift in Sources */,
 				A4A0DCD927BD438A0069A8A5 /* AppDelegate.swift in Sources */,
 				A4AB999827C3969A00D446E7 /* OnboardingCollectionViewCell.swift in Sources */,
 				A4AB99BA27C3EA2900D446E7 /* HomeCoordinator.swift in Sources */,

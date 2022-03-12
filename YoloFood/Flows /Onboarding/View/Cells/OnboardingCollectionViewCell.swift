@@ -27,14 +27,14 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         return img
     }()
     
-    private var onboardingTitle: CustomTextField = {
-        let lb = CustomTextField(textSize: 20.0, color: .black, fonts: .medium)
+    private var onboardingTitle: CustomLabel = {
+        let lb = CustomLabel(textSize: 20.0, color: .black, fonts: .medium)
         lb.textAlignment = .center
         return lb
     }()
     
-    private var onboardingSubTitle: CustomTextField = {
-        let lb = CustomTextField(textSize: 16.0, color: .black, fonts: .regular)
+    private var onboardingSubTitle: CustomLabel = {
+        let lb = CustomLabel(textSize: 16.0, color: .black, fonts: .regular)
         lb.numberOfLines = 0 
         return lb
     }()
