@@ -19,9 +19,9 @@ final class StoriesView: UIView {
     }()
     
     private let storiesItems: [StoriesItems] = [
-        StoriesItems(image: "stories", title: "Как\nбыстро\nпохудеть?"),
-        StoriesItems(image: "stories", title: "Новые\nрасписания"),
-        StoriesItems(image: "stories", title: "Подпишитесь\nна\nправильное\nпитание")
+        StoriesItems(image: "food-1", title: "Как\nбыстро\nпохудеть?"),
+        StoriesItems(image: "food-2", title: "Новые\nрасписания"),
+        StoriesItems(image: "food-3", title: "Подпишитесь\nна\nправильное\nпитание")
     ]
     
     var tappedStories: ((Int) -> ())?
