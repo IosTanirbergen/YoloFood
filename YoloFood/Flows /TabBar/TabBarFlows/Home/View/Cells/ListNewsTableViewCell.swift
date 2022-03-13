@@ -96,6 +96,7 @@ extension ListNewsTableViewCell: ConfigureView {
     private func configureLayerView() {
         newsImage.roundCorners(corners: [.topLeft, .topRight], radius: 16.0)
         layer.cornerRadius = 16
+        //newsImage.contentMode = .scaleAspectFill
         layer.masksToBounds = true
     }
     

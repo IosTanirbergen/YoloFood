@@ -13,6 +13,8 @@ class StoriesCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties
     private let image: UIImageView = {
         let img = UIImageView()
+        img.contentMode = .scaleAspectFill
+        img.layer.masksToBounds = true
         return img
     }()
     
@@ -21,7 +23,6 @@ class StoriesCollectionViewCell: UICollectionViewCell {
         lb.numberOfLines = 0
         lb.backgroundColor = .black.withAlphaComponent(0.5)
         lb.layer.cornerRadius = 8.0
-        lb.layer.masksToBounds = true
         return lb
     }()
     

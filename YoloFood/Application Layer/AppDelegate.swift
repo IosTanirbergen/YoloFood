@@ -15,9 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var appCoordinator: Coordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .white
+        configureWindow()
         setCoordinator()
         return true
     }
@@ -25,6 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setCoordinator() {
         appCoordinator = AppCoordinator(window: window!)
         appCoordinator?.start()
+    }
+    
+    private func configureWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        
+        Thread.sleep(forTimeInterval: 1.0)
     }
 }
 
