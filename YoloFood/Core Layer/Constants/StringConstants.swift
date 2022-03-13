@@ -22,4 +22,11 @@ struct Strings {
         static let secondSubTitle = "Lorem ipsum dolor sit amet,\n consectetur adipiscing elit."
         static let thirdSubTitle = "Lorem ipsum dolor sit amet,\n consectetur adipiscing elit."
     }
+    
+    /// stories
+    struct Stories {
+        static let firstTitle = "Внимание к здоровью\n есть наибольшее препятствие для жизни."
+        static let secondTitle = "Две вещи обнаруживают свою ценность\n после потери их - молодость и здоровье."
+        static let thirdTitle = "Только ежедневная работа над собой\n поможет выдержать удар судьбы\n и продлить себе здоровую и счастливую жизнь."
+    }
 }
