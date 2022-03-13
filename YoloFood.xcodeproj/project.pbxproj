@@ -73,6 +73,7 @@
 		A4AB99F027C3F84E00D446E7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99EF27C3F84E00D446E7 /* SearchViewModel.swift */; };
 		A4AB99F227C3F85700D446E7 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99F127C3F85700D446E7 /* SearchCoordinator.swift */; };
 		A4B6DC6E27DD5BA30073597B /* ConstStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC6D27DD5BA30073597B /* ConstStrings.swift */; };
+		A4B6DC7127DD70170073597B /* StoriesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC7027DD70170073597B /* StoriesFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,7 @@
 		A4AB99EF27C3F84E00D446E7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		A4AB99F127C3F85700D446E7 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		A4B6DC6D27DD5BA30073597B /* ConstStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstStrings.swift; sourceTree = "<group>"; };
+		A4B6DC7027DD70170073597B /* StoriesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 		A4489A0F27C52051002325B1 /* Stories View */ = {
 			isa = PBXGroup;
 			children = (
+				A4B6DC6F27DD700A0073597B /* Factory */,
 				A4489A1727C52C26002325B1 /* Cells */,
 				A4489A1027C5205E002325B1 /* StoriesView.swift */,
 				A46A1C7827C8CFF100931FD5 /* StoriesDetailViewController.swift */,
@@ -793,6 +796,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		A4B6DC6F27DD700A0073597B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6DC7027DD70170073597B /* StoriesFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -970,6 +981,7 @@
 				A4AB999B27C39D2100D446E7 /* OnboardingFacade.swift in Sources */,
 				A4AB998E27C121C500D446E7 /* Presentations .swift in Sources */,
 				A4AB997B27C10ABD00D446E7 /* BaseViewController.swift in Sources */,
+				A4B6DC7127DD70170073597B /* StoriesFactory.swift in Sources */,
 				A4AB99A027C39E4900D446E7 /* StringConstants.swift in Sources */,
 				A4AB99B127C3DC2E00D446E7 /* UIButton.swift in Sources */,
 				A4B6DC6E27DD5BA30073597B /* ConstStrings.swift in Sources */,

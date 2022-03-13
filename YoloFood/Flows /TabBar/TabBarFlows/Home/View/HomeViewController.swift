@@ -29,6 +29,7 @@ final class HomeViewController: BaseViewController {
         super.viewDidLoad()
         setUI()
         showQuestionListIfNeeded()
+        showStoriesIfNeeded()
     }
 }
 
@@ -78,8 +79,9 @@ extension HomeViewController {
     }
     
     private func showStoriesIfNeeded() {
-        storiesView.tappedStories = { val in
-           
+        storiesView.tappedStories = { [weak self] val in
+            guard let self = self else { return }
+            self.delegate?.showStoriesDetail()
         }
     }
 }
