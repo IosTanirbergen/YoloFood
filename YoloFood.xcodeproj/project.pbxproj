@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8E62803827DD3B0C00081375 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */; };
-		8E62803B27DD3B4400081375 /* ProfileFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803A27DD3B4400081375 /* ProfileFactory.swift */; };
+		8E62803B27DD3B4400081375 /* TableViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803A27DD3B4400081375 /* TableViewFactory.swift */; };
 		8E62803D27DD43B000081375 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803C27DD43AF00081375 /* CustomTextField.swift */; };
-		A43F476727DC7FB100F9A624 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */; };
+		A43F476727DC7FB100F9A624 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476627DC7FB100F9A624 /* ServicesView.swift */; };
 		A43F476927DC89D700F9A624 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */; };
 		A43F476B27DD027600F9A624 /* ListNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */; };
 		A43F477027DD410300F9A624 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476F27DD410300F9A624 /* NotificationName.swift */; };
@@ -74,6 +74,12 @@
 		A4AB99F227C3F85700D446E7 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB99F127C3F85700D446E7 /* SearchCoordinator.swift */; };
 		A4B6DC6E27DD5BA30073597B /* ConstStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC6D27DD5BA30073597B /* ConstStrings.swift */; };
 		A4B6DC7127DD70170073597B /* StoriesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC7027DD70170073597B /* StoriesFactory.swift */; };
+		A4B6DC7327DDB4F20073597B /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC7227DDB4F20073597B /* CustomNavigationBar.swift */; };
+		A4B6DC7527DDB53E0073597B /* ViewGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC7427DDB53E0073597B /* ViewGesture.swift */; };
+		A4B6DC7827DDB7350073597B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A4B6DC7727DDB7350073597B /* IQKeyboardManagerSwift */; };
+		A4B6DC7B27DDB9540073597B /* TableViewFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC7A27DDB9540073597B /* TableViewFacade.swift */; };
+		A4B6DC7F27DDCC6D0073597B /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC7E27DDCC6D0073597B /* PersonCollectionViewCell.swift */; };
+		A4B6DC8227DDCE9F0073597B /* QuestionListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC8127DDCE9F0073597B /* QuestionListFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,9 +101,9 @@
 
 /* Begin PBXFileReference section */
 		8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		8E62803A27DD3B4400081375 /* ProfileFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFactory.swift; sourceTree = "<group>"; };
+		8E62803A27DD3B4400081375 /* TableViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFactory.swift; sourceTree = "<group>"; };
 		8E62803C27DD43AF00081375 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
+		A43F476627DC7FB100F9A624 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 		A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewsTableViewCell.swift; sourceTree = "<group>"; };
 		A43F476F27DD410300F9A624 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
@@ -164,6 +170,11 @@
 		A4AB99F127C3F85700D446E7 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		A4B6DC6D27DD5BA30073597B /* ConstStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstStrings.swift; sourceTree = "<group>"; };
 		A4B6DC7027DD70170073597B /* StoriesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesFactory.swift; sourceTree = "<group>"; };
+		A4B6DC7227DDB4F20073597B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		A4B6DC7427DDB53E0073597B /* ViewGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGesture.swift; sourceTree = "<group>"; };
+		A4B6DC7A27DDB9540073597B /* TableViewFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFacade.swift; sourceTree = "<group>"; };
+		A4B6DC7E27DDCC6D0073597B /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4B6DC8127DDCE9F0073597B /* QuestionListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4AB997E27C10C8200D446E7 /* SnapKit in Frameworks */,
+				A4B6DC7827DDB7350073597B /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +215,7 @@
 		8E62803927DD3B1C00081375 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				8E62803A27DD3B4400081375 /* ProfileFactory.swift */,
+				8E62803A27DD3B4400081375 /* TableViewFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -211,7 +223,7 @@
 		A43F476327DC7F4E00F9A624 /* Services View */ = {
 			isa = PBXGroup;
 			children = (
-				A43F476627DC7FB100F9A624 /* ServicesTableViewCell.swift */,
+				A43F476627DC7FB100F9A624 /* ServicesView.swift */,
 				A43F476527DC7F9E00F9A624 /* Cells */,
 			);
 			path = "Services View";
@@ -353,8 +365,8 @@
 			children = (
 				A4A0DD0F27BD51420069A8A5 /* Onboarding */,
 				A4A0DD1027BD514E0069A8A5 /* Authorization */,
-				A4A0DD1127BD515A0069A8A5 /* Question List */,
 				A4AB99BD27C3EDDF00D446E7 /* TabBar */,
+				A4B6DC7C27DDC3A50073597B /* Grid Flows */,
 			);
 			path = "Flows ";
 			sourceTree = "<group>";
@@ -399,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				A4AB999527C137BA00D446E7 /* Coordinator */,
+				A4B6DC8027DDCE900073597B /* Factory */,
 				A4AB999327C137AF00D446E7 /* View */,
 				A4AB999227C137A600D446E7 /* ViewModel */,
 			);
@@ -495,6 +508,7 @@
 		A4AB999327C137AF00D446E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A4B6DC7D27DDCC5A0073597B /* Cells */,
 				A44FD6FB27C40CF00036FE6F /* QuestionListViewController.swift */,
 			);
 			path = View;
@@ -560,6 +574,7 @@
 				A4AB99A927C3AB0500D446E7 /* CustomLabel.swift */,
 				8E62803C27DD43AF00081375 /* CustomTextField.swift */,
 				A4AB99AD27C3D84200D446E7 /* CustomButton.swift */,
+				A4B6DC7227DDB4F20073597B /* CustomNavigationBar.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -570,6 +585,7 @@
 				A4AB99B027C3DC2E00D446E7 /* UIButton.swift */,
 				A4AB99B227C3DC6400D446E7 /* String.swift */,
 				A43F477127DD576F00F9A624 /* UIView.swift */,
+				A4B6DC7427DDB53E0073597B /* ViewGesture.swift */,
 			);
 			path = "Extentions ";
 			sourceTree = "<group>";
@@ -691,8 +707,9 @@
 		A4AB99CE27C3F76D00D446E7 /* Profile  */ = {
 			isa = PBXGroup;
 			children = (
-				8E62803927DD3B1C00081375 /* Factory */,
 				A4AB99DA27C3F7B500D446E7 /* Coordinator */,
+				A4B6DC7927DDB9480073597B /* Facade */,
+				8E62803927DD3B1C00081375 /* Factory */,
 				A4AB99D927C3F7B000D446E7 /* View */,
 				A4AB99D827C3F7AB00D446E7 /* ViewModel */,
 			);
@@ -804,6 +821,38 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		A4B6DC7927DDB9480073597B /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6DC7A27DDB9540073597B /* TableViewFacade.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		A4B6DC7C27DDC3A50073597B /* Grid Flows */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0DD1127BD515A0069A8A5 /* Question List */,
+			);
+			path = "Grid Flows";
+			sourceTree = "<group>";
+		};
+		A4B6DC7D27DDCC5A0073597B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6DC7E27DDCC6D0073597B /* PersonCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A4B6DC8027DDCE900073597B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				A4B6DC8127DDCE9F0073597B /* QuestionListFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -822,6 +871,7 @@
 			name = YoloFood;
 			packageProductDependencies = (
 				A4AB997D27C10C8200D446E7 /* SnapKit */,
+				A4B6DC7727DDB7350073597B /* IQKeyboardManagerSwift */,
 			);
 			productName = YoloFood;
 			productReference = A4A0DCD527BD438A0069A8A5 /* YoloFood.app */;
@@ -897,6 +947,7 @@
 			mainGroup = A4A0DCCC27BD438A0069A8A5;
 			packageReferences = (
 				A4AB997C27C10C8200D446E7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A4B6DC7627DDB7350073597B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = A4A0DCD627BD438A0069A8A5 /* Products */;
 			projectDirPath = "";
@@ -949,7 +1000,7 @@
 				A4489A1927C52C97002325B1 /* StoriesCollectionViewCell.swift in Sources */,
 				A4AB99AE27C3D84200D446E7 /* CustomButton.swift in Sources */,
 				A4AB99C727C3F08700D446E7 /* TabBarView.swift in Sources */,
-				A43F476727DC7FB100F9A624 /* ServicesTableViewCell.swift in Sources */,
+				A43F476727DC7FB100F9A624 /* ServicesView.swift in Sources */,
 				A4AB99EC27C3F82000D446E7 /* OrderViewModel.swift in Sources */,
 				A4489A1427C520A2002325B1 /* HomeFactory.swift in Sources */,
 				A4AB99F027C3F84E00D446E7 /* SearchViewModel.swift in Sources */,
@@ -957,25 +1008,29 @@
 				A4AB99A627C3AACD00D446E7 /* Fonts .swift in Sources */,
 				A44FD6FA27C40C900036FE6F /* QuestionListCoordinator.swift in Sources */,
 				A4AB999E27C39DA200D446E7 /* ImageConstants .swift in Sources */,
-				8E62803B27DD3B4400081375 /* ProfileFactory.swift in Sources */,
+				8E62803B27DD3B4400081375 /* TableViewFactory.swift in Sources */,
 				A4AB999127C129E000D446E7 /* AppDelegate&CoreData.swift in Sources */,
 				A43F477027DD410300F9A624 /* NotificationName.swift in Sources */,
 				A4AB998A27C1213300D446E7 /* Router.swift in Sources */,
 				A4AB99DC27C3F7BF00D446E7 /* ProfileCoordinator.swift in Sources */,
 				A4AB99E227C3F7EA00D446E7 /* MyPlansCoordinator.swift in Sources */,
 				A46A1C7B27C8D01E00931FD5 /* StoriesDetailViewCoordinator.swift in Sources */,
+				A4B6DC8227DDCE9F0073597B /* QuestionListFactory.swift in Sources */,
 				A4AB99BC27C3EA5000D446E7 /* HomeViewController.swift in Sources */,
 				A4AB99AA27C3AB0500D446E7 /* CustomLabel.swift in Sources */,
 				A46A1C8027C8D78E00931FD5 /* HomeViewControllerFacade.swift in Sources */,
 				A43F477227DD576F00F9A624 /* UIView.swift in Sources */,
+				A4B6DC7327DDB4F20073597B /* CustomNavigationBar.swift in Sources */,
 				A4AB99AC27C3AEEC00D446E7 /* Colors .swift in Sources */,
 				A4AB99E627C3F80700D446E7 /* MyPlansViewModel.swift in Sources */,
 				A4AB998027C11F2600D446E7 /* AppCoordinator .swift in Sources */,
+				A4B6DC7527DDB53E0073597B /* ViewGesture.swift in Sources */,
 				A4AB99DE27C3F7D100D446E7 /* ProfileViewController.swift in Sources */,
 				A4AB998527C11FF200D446E7 /* OnboardingCoordinator.swift in Sources */,
 				A4AB99CA27C3F0E100D446E7 /* TabBarFacade .swift in Sources */,
 				A46A1C7927C8CFF100931FD5 /* StoriesDetailViewController.swift in Sources */,
 				A4A0DCE327BD438B0069A8A5 /* YoloFood.xcdatamodeld in Sources */,
+				A4B6DC7B27DDB9540073597B /* TableViewFacade.swift in Sources */,
 				A4489A2A27C67824002325B1 /* HomeTableViewDataSources.swift in Sources */,
 				A4AB99C527C3EE1B00D446E7 /* TabBarViewController.swift in Sources */,
 				A4AB999B27C39D2100D446E7 /* OnboardingFacade.swift in Sources */,
@@ -1001,6 +1056,7 @@
 				A4A0DCD927BD438A0069A8A5 /* AppDelegate.swift in Sources */,
 				A4AB999827C3969A00D446E7 /* OnboardingCollectionViewCell.swift in Sources */,
 				A4AB99BA27C3EA2900D446E7 /* HomeCoordinator.swift in Sources */,
+				A4B6DC7F27DDCC6D0073597B /* PersonCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,6 +1406,14 @@
 				kind = branch;
 			};
 		};
+		A4B6DC7627DDB7350073597B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1357,6 +1421,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A4AB997C27C10C8200D446E7 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		A4B6DC7727DDB7350073597B /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4B6DC7627DDB7350073597B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 

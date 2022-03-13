@@ -53,4 +53,15 @@ struct ImagesConstants {
         static let selectedHeart = UIImage(named: "heartSelected")?.withRenderingMode(.alwaysOriginal)
         static let selectedProfile = UIImage(named: "profileSelected")?.withRenderingMode(.alwaysOriginal)
     }
+    
+    /// Question
+    struct QuestionImages {
+        
+        /// Person
+        struct Persons {
+            static let q_left = UIImage(named: "q-left")?.withRenderingMode(.alwaysOriginal)
+            static let q_center = UIImage(named: "q-center")?.withRenderingMode(.alwaysOriginal)
+            static let q_right = UIImage(named: "q-right")?.withRenderingMode(.alwaysOriginal)
+        }
+    }
 }

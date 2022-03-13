@@ -34,13 +34,9 @@ class ProfileTableViewCell: UITableViewCell {
     
 // MARK: - Lifecyle:
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: .default, reuseIdentifier: nil)
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
         configureUI()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }
 
@@ -56,14 +52,14 @@ extension ProfileTableViewCell {
         [phoneNumberTextFiled, continueButton].forEach {
             $0.layer.cornerRadius = 8
         }
-        
+        selectionStyle = .none
         makeConstraints()
     }
     
     func makeConstraints() {
         titleLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(12)
-            $0.center.equalToSuperview()
+            $0.top.equalToSuperview().inset(32.0)
+            $0.centerX.equalToSuperview()
         }
         
         phoneNumberTextFiled.snp.makeConstraints {

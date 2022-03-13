@@ -12,12 +12,16 @@ final class HomeViewController: BaseViewController {
     // MARK: - Coordinator Delegate
     var delegate: HomeCoordinator?
     
-    // MARK: - HomeFacade
-    let factory = HomeFactory()
+    // MARK: - Facade
     private let facade = HomeViewControllerFacade()
+    private let tableViewFacade = TableViewFacade()
+    
+    // MARK: - Factory
+    private let tableViewFactory = TableViewFactory()
+    let factory = HomeFactory()
+    
     
     // MARK: - Header View
-    
     private let storiesView = StoriesView()
     
     let tableView: UITableView = {
@@ -28,7 +32,6 @@ final class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
-        showQuestionListIfNeeded()
         showStoriesIfNeeded()
     }
 }
@@ -59,13 +62,6 @@ extension HomeViewController {
         }
     }
     
-    private func showQuestionListIfNeeded() {
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
-//            guard let self = self else { return }
-//            //self.delegate?.showQuestionListFlow()
-//        }
-    }
-    
     private func configureTableView() {
         tableView.backgroundColor = .clear
         tableView.delegate = self
@@ -75,6 +71,9 @@ extension HomeViewController {
         [ListNewsTableViewCell.self].forEach {
             tableView.register($0, forCellReuseIdentifier: $0.description())
         }
+        
+        tableViewFactory.makeRefreshControl(tableView: tableView)
+        tableViewFacade.configureRefreshControl(refresh: tableViewFactory.makeRefreshControl())
         
     }
     
