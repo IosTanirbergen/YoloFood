@@ -38,7 +38,7 @@ final class AppCoordinator: Coordinator {
             coordinate(to: onboardingCoordinator)
             return
         }
-        let onboardingCoordinator = TabBarCoordinator(navigationController: navigationController)
+        let onboardingCoordinator = OnboardingCoordinator(navigationController: navigationController)
         coordinate(to: onboardingCoordinator)
     }
 }

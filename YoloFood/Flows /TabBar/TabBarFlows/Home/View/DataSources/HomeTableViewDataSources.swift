@@ -62,6 +62,19 @@ extension HomeViewController {
     
     private func serviceHeaderView() -> UIView {
         let view = ServicesView()
+        view.delegate = self
         return view
+    }
+}
+
+extension HomeViewController: ServicesViewProtocol {
+    
+    func didTappedServices(row: Int) {
+        switch row {
+        case 1:
+            delegate?.showQuestionList()
+        default:
+            return
+        }
     }
 }

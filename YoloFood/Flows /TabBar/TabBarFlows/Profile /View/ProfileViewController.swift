@@ -9,17 +9,22 @@ import UIKit
 
 final class ProfileViewController: BaseViewController {
     
-// MARK: - UI Elements:
-    
+    // MARK: - UI Elements:
     fileprivate lazy var tableView: UITableView = {
         return $0
     }(UITableView())
     
-// MARK: - Lifecycle:
+    // MARK: - Factory
+    private let factory = TableViewFactory()
     
+    // MARK: - Facade
+    private let facade = TableViewFacade()
+    
+    // MARK: - Lifecycle:
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        configureTableView()
     }
 }
 
@@ -27,27 +32,31 @@ final class ProfileViewController: BaseViewController {
 
 extension ProfileViewController {
     
-    func configureUI() {
-        [view].forEach {
-            $0?.backgroundColor = .white
-            $0?.addSubview(tableView)
+    private func configureUI() {
+        [tableView].forEach {
+            view.addSubview($0)
         }
         
         [tableView].forEach {
             $0.register(ProfileTableViewCell.self, forCellReuseIdentifier: String(describing: ProfileTableViewCell.self))
             $0.delegate = self
             $0.dataSource = self
-            
             $0.separatorStyle = .none
+            $0.backgroundColor = .clear
         }
         
         makeConstraints()
     }
     
-    func makeConstraints() {
+    private func makeConstraints() {
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+    }
+    
+    private func configureTableView() {
+        factory.makeRefreshControl(tableView: tableView)
+        facade.configureRefreshControl(refresh: factory.makeRefreshControl())
     }
 }
 
@@ -55,13 +64,20 @@ extension ProfileViewController {
 
 extension ProfileViewController: TableViewDelegateProtocol {
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ProfileTableViewCell.self), for: indexPath) as! ProfileTableViewCell
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 260
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ProfileTableViewCell.self), for: indexPath) as! ProfileTableViewCell
-        cell.selectionStyle = .none
-        return cell
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
 }

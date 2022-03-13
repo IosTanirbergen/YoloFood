@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ServicesViewProtocol: AnyObject {
+    func didTappedServices(row: Int)
+}
+
 class ServicesView: UIView {
     
     // MARK: - Properties
@@ -18,6 +22,9 @@ class ServicesView: UIView {
     }()
     
     private let factory = HomeFactory()
+    
+    // MARK: - Delegate
+    var delegate: ServicesViewProtocol?
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -85,6 +92,10 @@ extension ServicesView: CollectionViewDelegateProtocol {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 4.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didTappedServices(row: indexPath.row)
     }
 }
 
