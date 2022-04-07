@@ -13,12 +13,16 @@ class StoriesCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties
     private let image: UIImageView = {
         let img = UIImageView()
+        img.contentMode = .scaleAspectFill
+        img.layer.masksToBounds = true
         return img
     }()
     
     private let imageTitle: CustomLabel = {
         let lb = CustomLabel(textSize: 16.0, color: .white, fonts: .bold)
         lb.numberOfLines = 0
+        lb.backgroundColor = .black.withAlphaComponent(0.5)
+        lb.layer.cornerRadius = 8.0
         return lb
     }()
     
@@ -29,6 +33,10 @@ class StoriesCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: .zero)
         setUI()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
     }
     
     required init?(coder: NSCoder) {

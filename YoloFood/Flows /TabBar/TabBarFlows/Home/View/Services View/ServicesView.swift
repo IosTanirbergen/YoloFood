@@ -7,12 +7,11 @@
 
 import UIKit
 
-class ServicesTableViewCell: UITableViewCell {
-    
-    /// * CELL ID
-    override class func description() -> String {
-        return "ServicesTableViewCell"
-    }
+protocol ServicesViewProtocol: AnyObject {
+    func didTappedServices(row: Int)
+}
+
+class ServicesView: UIView {
     
     // MARK: - Properties
     private let servicesCollectionView: UICollectionView = {
@@ -24,19 +23,25 @@ class ServicesTableViewCell: UITableViewCell {
     
     private let factory = HomeFactory()
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    // MARK: - Delegate
+    var delegate: ServicesViewProtocol?
+    
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
         setView()
         configureCollectionView()
     }
-
+        
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
-extension ServicesTableViewCell: ConfigureView {
+extension ServicesView: ConfigureView {
     
     func setView() {
         [servicesCollectionView].forEach {
-            contentView.addSubview($0)
+            addSubview($0)
         }
         
         servicesCollectionView.snp.makeConstraints {
@@ -63,7 +68,7 @@ extension ServicesTableViewCell: ConfigureView {
 }
 
 // MARK: - Collection Delegate & DataSources
-extension ServicesTableViewCell: CollectionViewDelegateProtocol {
+extension ServicesView: CollectionViewDelegateProtocol {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         configureCell(collectionView: collectionView, indexPath: indexPath)
@@ -88,10 +93,14 @@ extension ServicesTableViewCell: CollectionViewDelegateProtocol {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 4.0
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didTappedServices(row: indexPath.row)
+    }
 }
 
 // MARK: - Configure CollectionView
-extension ServicesTableViewCell {
+extension ServicesView {
     
     private func sizeForItem() -> CGSize {
         let width = (UIScreen.main.bounds.size.width) / 3 - 8.0

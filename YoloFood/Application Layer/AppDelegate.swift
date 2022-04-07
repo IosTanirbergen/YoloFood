@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,15 +17,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .white
+        /// * Window
+        configureWindow()
+        
+        /// * Coordinator
         setCoordinator()
+        
+        /// * IQKeyboardManager
+        setConfigureKeyboard()
+        
         return true
     }
     
     private func setCoordinator() {
         appCoordinator = AppCoordinator(window: window!)
         appCoordinator?.start()
+    }
+    
+    private func configureWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        
+        Thread.sleep(forTimeInterval: 1.0)
+    }
+    
+    private func setConfigureKeyboard() {
+        IQKeyboardManager.shared.enable = true
     }
 }
 
