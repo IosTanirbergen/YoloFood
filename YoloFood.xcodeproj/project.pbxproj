@@ -10,6 +10,9 @@
 		8E62803827DD3B0C00081375 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */; };
 		8E62803B27DD3B4400081375 /* TableViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803A27DD3B4400081375 /* TableViewFactory.swift */; };
 		8E62803D27DD43B000081375 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803C27DD43AF00081375 /* CustomTextField.swift */; };
+		8E86DD162815564D0057577D /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DD152815564D0057577D /* ShopView.swift */; };
+		8E86DD18281556850057577D /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DD17281556850057577D /* ShopViewController.swift */; };
+		8E86DD1B281558640057577D /* ShowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DD1A281558640057577D /* ShowCoordinator.swift */; };
 		A43F476727DC7FB100F9A624 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476627DC7FB100F9A624 /* ServicesView.swift */; };
 		A43F476927DC89D700F9A624 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */; };
 		A43F476B27DD027600F9A624 /* ListNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */; };
@@ -103,6 +106,9 @@
 		8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		8E62803A27DD3B4400081375 /* TableViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFactory.swift; sourceTree = "<group>"; };
 		8E62803C27DD43AF00081375 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8E86DD152815564D0057577D /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		8E86DD17281556850057577D /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		8E86DD1A281558640057577D /* ShowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCoordinator.swift; sourceTree = "<group>"; };
 		A43F476627DC7FB100F9A624 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 		A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A43F476A27DD027600F9A624 /* ListNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -218,6 +224,56 @@
 				8E62803A27DD3B4400081375 /* TableViewFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		8E86DD102815560E0057577D /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				8E86DD11281556160057577D /* Components */,
+				8E86DD192815584B0057577D /* Coordinator */,
+				8E86DD122815561D0057577D /* View */,
+				8E86DD14281556340057577D /* ViewModel */,
+				8E86DD132815562C0057577D /* ViewController */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		8E86DD11281556160057577D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8E86DD122815561D0057577D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E86DD152815564D0057577D /* ShopView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E86DD132815562C0057577D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8E86DD17281556850057577D /* ShopViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8E86DD14281556340057577D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E86DD192815584B0057577D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8E86DD1A281558640057577D /* ShowCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		A43F476327DC7F4E00F9A624 /* Services View */ = {
@@ -833,6 +889,7 @@
 			isa = PBXGroup;
 			children = (
 				A4A0DD1127BD515A0069A8A5 /* Question List */,
+				8E86DD102815560E0057577D /* Shop */,
 			);
 			path = "Grid Flows";
 			sourceTree = "<group>";
@@ -995,6 +1052,7 @@
 				A46A1C7D27C8D45F00931FD5 /* StoriesDetailCollectionViewCell.swift in Sources */,
 				A4AB99F227C3F85700D446E7 /* SearchCoordinator.swift in Sources */,
 				8E62803827DD3B0C00081375 /* ProfileTableViewCell.swift in Sources */,
+				8E86DD18281556850057577D /* ShopViewController.swift in Sources */,
 				A44FD6FC27C40CF00036FE6F /* QuestionListViewController.swift in Sources */,
 				8E62803D27DD43B000081375 /* CustomTextField.swift in Sources */,
 				A4489A1927C52C97002325B1 /* StoriesCollectionViewCell.swift in Sources */,
@@ -1014,6 +1072,7 @@
 				A4AB998A27C1213300D446E7 /* Router.swift in Sources */,
 				A4AB99DC27C3F7BF00D446E7 /* ProfileCoordinator.swift in Sources */,
 				A4AB99E227C3F7EA00D446E7 /* MyPlansCoordinator.swift in Sources */,
+				8E86DD162815564D0057577D /* ShopView.swift in Sources */,
 				A46A1C7B27C8D01E00931FD5 /* StoriesDetailViewCoordinator.swift in Sources */,
 				A4B6DC8227DDCE9F0073597B /* QuestionListFactory.swift in Sources */,
 				A4AB99BC27C3EA5000D446E7 /* HomeViewController.swift in Sources */,
@@ -1040,6 +1099,7 @@
 				A4AB99A027C39E4900D446E7 /* StringConstants.swift in Sources */,
 				A4AB99B127C3DC2E00D446E7 /* UIButton.swift in Sources */,
 				A4B6DC6E27DD5BA30073597B /* ConstStrings.swift in Sources */,
+				8E86DD1B281558640057577D /* ShowCoordinator.swift in Sources */,
 				A4489A2D27C67B55002325B1 /* Stories.swift in Sources */,
 				A4AB99EE27C3F84700D446E7 /* SearchViewController.swift in Sources */,
 				A43F476B27DD027600F9A624 /* ListNewsTableViewCell.swift in Sources */,
@@ -1236,7 +1296,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1266,7 +1326,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

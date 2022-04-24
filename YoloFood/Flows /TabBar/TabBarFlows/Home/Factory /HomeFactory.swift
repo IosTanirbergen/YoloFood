@@ -23,10 +23,10 @@ final class HomeFactory {
     // MARK: - Properties
     private let gridItems: [GridItems] = [
         GridItems(image: ImagesConstants.GridImages.myOrder, title: "Купить"),
-        GridItems(image: ImagesConstants.GridImages.myTest, title: "Проверить"),
+        GridItems(image: ImagesConstants.GridImages.myTest, title: "Запись на тест"),
         GridItems(image: ImagesConstants.GridImages.myFitness, title: "Фитнес"),
-        GridItems(image: ImagesConstants.GridImages.mySchedule, title: "Мой записи"),
-        GridItems(image: ImagesConstants.GridImages.myHistoryOrders, title: "Мой текущий\n заказы"),
+        GridItems(image: ImagesConstants.GridImages.mySchedule, title: "Мои записи"),
+        GridItems(image: ImagesConstants.GridImages.myHistoryOrders, title: "Мои текущие\n заказы"),
         GridItems(image: ImagesConstants.GridImages.myHistory, title: "История")
     ]
     

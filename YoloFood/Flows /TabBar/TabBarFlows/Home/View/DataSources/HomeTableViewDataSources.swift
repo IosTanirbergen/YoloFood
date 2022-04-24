@@ -71,6 +71,8 @@ extension HomeViewController: ServicesViewProtocol {
     
     func didTappedServices(row: Int) {
         switch row {
+        case 0:
+            delegate?.showShopFlow()
         case 1:
             delegate?.showQuestionList()
         default:

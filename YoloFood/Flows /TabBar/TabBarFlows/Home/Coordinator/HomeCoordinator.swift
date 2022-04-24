@@ -16,7 +16,11 @@ protocol ShowStoriesDetailFlow {
     func showStoriesDetail()
 }
 
-typealias HomeCoordinatorOutputProtocol = ShowQuestionListFlow & ShowStoriesDetailFlow
+protocol ShowShopFlow {
+    func showShopFlow()
+}
+
+typealias HomeCoordinatorOutputProtocol = ShowQuestionListFlow & ShowStoriesDetailFlow & ShowShopFlow
 
 class HomeCoordinator: Coordinator {
     
@@ -44,5 +48,10 @@ extension HomeCoordinator: HomeCoordinatorOutputProtocol {
     func showStoriesDetail() {
         let storiesDetailCoordinator = StoriesDetailViewCoordinator(navigationController: navigationController)
         coordinate(to: storiesDetailCoordinator)
+    }
+    
+    func showShopFlow() {
+        let shopCoordinator = ShopCoordinator(navigationController: navigationController)
+        coordinate(to: shopCoordinator)
     }
 }
