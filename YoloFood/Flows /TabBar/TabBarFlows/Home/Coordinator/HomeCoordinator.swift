@@ -51,7 +51,7 @@ extension HomeCoordinator: HomeCoordinatorOutputProtocol {
     }
     
     func showShopFlow() {
-        let shopCoordinator = ShopCoordinator(navigationController: navigationController)
+        let shopCoordinator = CompanyCoordinator(navigationController: navigationController)
         coordinate(to: shopCoordinator)
     }
 }

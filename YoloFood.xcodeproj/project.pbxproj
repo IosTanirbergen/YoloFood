@@ -10,8 +10,8 @@
 		8E62803827DD3B0C00081375 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */; };
 		8E62803B27DD3B4400081375 /* TableViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803A27DD3B4400081375 /* TableViewFactory.swift */; };
 		8E62803D27DD43B000081375 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803C27DD43AF00081375 /* CustomTextField.swift */; };
-		8E86DD162815564D0057577D /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DD152815564D0057577D /* ShopView.swift */; };
-		8E86DD18281556850057577D /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DD17281556850057577D /* ShopViewController.swift */; };
+		8E86DD162815564D0057577D /* CompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DD152815564D0057577D /* CompanyView.swift */; };
+		8E86DD18281556850057577D /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DD17281556850057577D /* CompanyViewController.swift */; };
 		8E86DD1B281558640057577D /* ShowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DD1A281558640057577D /* ShowCoordinator.swift */; };
 		A43F476727DC7FB100F9A624 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476627DC7FB100F9A624 /* ServicesView.swift */; };
 		A43F476927DC89D700F9A624 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */; };
@@ -83,6 +83,8 @@
 		A4B6DC7B27DDB9540073597B /* TableViewFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC7A27DDB9540073597B /* TableViewFacade.swift */; };
 		A4B6DC7F27DDCC6D0073597B /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC7E27DDCC6D0073597B /* PersonCollectionViewCell.swift */; };
 		A4B6DC8227DDCE9F0073597B /* QuestionListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B6DC8127DDCE9F0073597B /* QuestionListFactory.swift */; };
+		DDB39AF6281BCEF9001A45F9 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB39AF5281BCEF9001A45F9 /* CompanyTableViewCell.swift */; };
+		DDB39AF9281BCF4E001A45F9 /* CompanyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB39AF8281BCF4E001A45F9 /* CompanyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +108,8 @@
 		8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		8E62803A27DD3B4400081375 /* TableViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFactory.swift; sourceTree = "<group>"; };
 		8E62803C27DD43AF00081375 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		8E86DD152815564D0057577D /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
-		8E86DD17281556850057577D /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		8E86DD152815564D0057577D /* CompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyView.swift; sourceTree = "<group>"; };
+		8E86DD17281556850057577D /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		8E86DD1A281558640057577D /* ShowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCoordinator.swift; sourceTree = "<group>"; };
 		A43F476627DC7FB100F9A624 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 		A43F476827DC89D700F9A624 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -181,6 +183,8 @@
 		A4B6DC7A27DDB9540073597B /* TableViewFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFacade.swift; sourceTree = "<group>"; };
 		A4B6DC7E27DDCC6D0073597B /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4B6DC8127DDCE9F0073597B /* QuestionListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListFactory.swift; sourceTree = "<group>"; };
+		DDB39AF5281BCEF9001A45F9 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		DDB39AF8281BCF4E001A45F9 /* CompanyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,16 +230,16 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		8E86DD102815560E0057577D /* Shop */ = {
+		8E86DD102815560E0057577D /* Company  */ = {
 			isa = PBXGroup;
 			children = (
 				8E86DD11281556160057577D /* Components */,
 				8E86DD192815584B0057577D /* Coordinator */,
 				8E86DD122815561D0057577D /* View */,
-				8E86DD14281556340057577D /* ViewModel */,
+				DDB39AF7281BCF3B001A45F9 /* ViewModel */,
 				8E86DD132815562C0057577D /* ViewController */,
 			);
-			path = Shop;
+			path = "Company ";
 			sourceTree = "<group>";
 		};
 		8E86DD11281556160057577D /* Components */ = {
@@ -248,7 +252,8 @@
 		8E86DD122815561D0057577D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8E86DD152815564D0057577D /* ShopView.swift */,
+				DDB39AF4281BCED7001A45F9 /* Cells */,
+				8E86DD152815564D0057577D /* CompanyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,16 +261,9 @@
 		8E86DD132815562C0057577D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8E86DD17281556850057577D /* ShopViewController.swift */,
+				8E86DD17281556850057577D /* CompanyViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		8E86DD14281556340057577D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8E86DD192815584B0057577D /* Coordinator */ = {
@@ -380,8 +378,6 @@
 				A4A0DD0C27BD43AD0069A8A5 /* Flows  */,
 				A4A0DD0E27BD43C10069A8A5 /* Buisness Logic Layer */,
 				A4A0DD0D27BD43B90069A8A5 /* Core Layer */,
-				A4A0DCE427BD438D0069A8A5 /* Assets.xcassets */,
-				A4A0DCE627BD438D0069A8A5 /* LaunchScreen.storyboard */,
 				A4A0DCE927BD438D0069A8A5 /* Info.plist */,
 				A4A0DCE127BD438B0069A8A5 /* YoloFood.xcdatamodeld */,
 			);
@@ -408,6 +404,7 @@
 		A4A0DD0B27BD43A20069A8A5 /* Application Layer */ = {
 			isa = PBXGroup;
 			children = (
+				A4A0DCE627BD438D0069A8A5 /* LaunchScreen.storyboard */,
 				A4AB998F27C129D300D446E7 /* CoreData */,
 				A4AB998627C1213300D446E7 /* Router */,
 				A4A0DCD827BD438A0069A8A5 /* AppDelegate.swift */,
@@ -430,6 +427,7 @@
 		A4A0DD0D27BD43B90069A8A5 /* Core Layer */ = {
 			isa = PBXGroup;
 			children = (
+				DDB39AFA281BDA26001A45F9 /* Resources */,
 				A4AB998B27C121AB00D446E7 /* Extention + Helps */,
 				A4AB997927C10AAE00D446E7 /* BaseViews */,
 				A4AB999C27C39D9300D446E7 /* Constants */,
@@ -889,7 +887,8 @@
 			isa = PBXGroup;
 			children = (
 				A4A0DD1127BD515A0069A8A5 /* Question List */,
-				8E86DD102815560E0057577D /* Shop */,
+				8E86DD102815560E0057577D /* Company  */,
+				DDB39AFB281BE71E001A45F9 /* Product  */,
 			);
 			path = "Grid Flows";
 			sourceTree = "<group>";
@@ -908,6 +907,69 @@
 				A4B6DC8127DDCE9F0073597B /* QuestionListFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		DDB39AF4281BCED7001A45F9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DDB39AF5281BCEF9001A45F9 /* CompanyTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DDB39AF7281BCF3B001A45F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDB39AF8281BCF4E001A45F9 /* CompanyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDB39AFA281BDA26001A45F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0DCE427BD438D0069A8A5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDB39AFB281BE71E001A45F9 /* Product  */ = {
+			isa = PBXGroup;
+			children = (
+				DDB39AFC281BE73C001A45F9 /* Coordinator */,
+				DDB39AFD281BE741001A45F9 /* View */,
+				DDB39AFE281BE747001A45F9 /* ViewModel */,
+				DDB39AFF281BE74E001A45F9 /* ViewController */,
+			);
+			path = "Product ";
+			sourceTree = "<group>";
+		};
+		DDB39AFC281BE73C001A45F9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		DDB39AFD281BE741001A45F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDB39AFE281BE747001A45F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDB39AFF281BE74E001A45F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1052,7 +1114,8 @@
 				A46A1C7D27C8D45F00931FD5 /* StoriesDetailCollectionViewCell.swift in Sources */,
 				A4AB99F227C3F85700D446E7 /* SearchCoordinator.swift in Sources */,
 				8E62803827DD3B0C00081375 /* ProfileTableViewCell.swift in Sources */,
-				8E86DD18281556850057577D /* ShopViewController.swift in Sources */,
+				8E86DD18281556850057577D /* CompanyViewController.swift in Sources */,
+				DDB39AF6281BCEF9001A45F9 /* CompanyTableViewCell.swift in Sources */,
 				A44FD6FC27C40CF00036FE6F /* QuestionListViewController.swift in Sources */,
 				8E62803D27DD43B000081375 /* CustomTextField.swift in Sources */,
 				A4489A1927C52C97002325B1 /* StoriesCollectionViewCell.swift in Sources */,
@@ -1072,9 +1135,10 @@
 				A4AB998A27C1213300D446E7 /* Router.swift in Sources */,
 				A4AB99DC27C3F7BF00D446E7 /* ProfileCoordinator.swift in Sources */,
 				A4AB99E227C3F7EA00D446E7 /* MyPlansCoordinator.swift in Sources */,
-				8E86DD162815564D0057577D /* ShopView.swift in Sources */,
+				8E86DD162815564D0057577D /* CompanyView.swift in Sources */,
 				A46A1C7B27C8D01E00931FD5 /* StoriesDetailViewCoordinator.swift in Sources */,
 				A4B6DC8227DDCE9F0073597B /* QuestionListFactory.swift in Sources */,
+				DDB39AF9281BCF4E001A45F9 /* CompanyViewModel.swift in Sources */,
 				A4AB99BC27C3EA5000D446E7 /* HomeViewController.swift in Sources */,
 				A4AB99AA27C3AB0500D446E7 /* CustomLabel.swift in Sources */,
 				A46A1C8027C8D78E00931FD5 /* HomeViewControllerFacade.swift in Sources */,
@@ -1288,7 +1352,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 67V6V79892;
+				DEVELOPMENT_TEAM = ADU39R8634;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YoloFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1296,13 +1360,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.YoloFood;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.YoloFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1318,7 +1383,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 67V6V79892;
+				DEVELOPMENT_TEAM = ADU39R8634;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YoloFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1326,13 +1391,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.YoloFood;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.YoloFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

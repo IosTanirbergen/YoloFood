@@ -8,12 +8,14 @@
 import Foundation
 import UIKit
 
-final class ShopCoordinator: Coordinator {
+final class CompanyCoordinator: Coordinator {
     
     private let navigationController: UINavigationController
     
-    private lazy var shopViewController: ShopViewController = {
-        let shopViewController = ShopViewController()
+    private lazy var shopViewController: CompanyViewController = {
+        let shopViewController = CompanyViewController()
+        shopViewController.hidesBottomBarWhenPushed = true 
+        shopViewController.viewModel = CompanyViewModel()
         return shopViewController
     }()
     
