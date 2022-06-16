@@ -1,13 +1,13 @@
 //
-//  ProfileViewController.swift
+//  DetailPrifleViewController.swift
 //  YoloFood
 //
-//  Created by Tanirbergen Kaldybay on 21.02.2022.
+//  Created by Zhanibek Santay on 16.06.2022.
 //
 
 import UIKit
 
-final class ProfileViewController: BaseViewController {
+final class DetailProfileViewController: BaseViewController {
     
     // MARK: - UI Elements:
     fileprivate lazy var tableView: UITableView = {
@@ -20,9 +20,13 @@ final class ProfileViewController: BaseViewController {
     // MARK: - Facade
     private let facade = TableViewFacade()
     
+    private var images = ["user", "book", "card", "payout", "bell"]
+    private var titles = ["Профиль", "Контакты", "Платежи", "Привязанные карточки", "Уведомления"]
+
     // MARK: - Lifecycle:
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Профиль"
         configureUI()
         configureTableView()
     }
@@ -30,7 +34,7 @@ final class ProfileViewController: BaseViewController {
 
 // MARK: - ConfigureUI:
 
-extension ProfileViewController {
+extension DetailProfileViewController {
     
     private func configureUI() {
         [tableView].forEach {
@@ -38,7 +42,7 @@ extension ProfileViewController {
         }
         
         [tableView].forEach {
-            $0.register(ProfileTableViewCell.self, forCellReuseIdentifier: String(describing: ProfileTableViewCell.self))
+            $0.register(DetailProfileTableViewCell.self, forCellReuseIdentifier: String(describing: DetailProfileTableViewCell.self))
             $0.delegate = self
             $0.dataSource = self
             $0.separatorStyle = .none
@@ -59,30 +63,25 @@ extension ProfileViewController {
         facade.configureRefreshControl(refresh: factory.makeRefreshControl())
     }
 }
-
-// MARK: - TableViewDelegate / DataSource:
-
-extension ProfileViewController: TableViewDelegateProtocol {
+extension DetailProfileViewController: TableViewDelegateProtocol {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ProfileTableViewCell.self), for: indexPath) as! ProfileTableViewCell
-        cell.didPressed = { [unowned self] in
-            let vc = PersonalProfileViewController()
-            vc.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DetailProfileTableViewCell.self), for: indexPath) as! DetailProfileTableViewCell
+        cell.rightImage.image = UIImage(named: images[indexPath.row])
+        cell.titleLabel.text = titles[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 260
+        return 60
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return images.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 }
+

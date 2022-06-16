@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E15D7B5285B00B000C4B537 /* PersonalProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15D7B4285B00B000C4B537 /* PersonalProfileViewController.swift */; };
+		2E15D7B8285B1CB000C4B537 /* DetailProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15D7B7285B1CB000C4B537 /* DetailProfileViewController.swift */; };
+		2E15D7BA285B1D6F00C4B537 /* DetailProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15D7B9285B1D6F00C4B537 /* DetailProfileTableViewCell.swift */; };
 		8E62803827DD3B0C00081375 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */; };
 		8E62803B27DD3B4400081375 /* TableViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803A27DD3B4400081375 /* TableViewFactory.swift */; };
 		8E62803D27DD43B000081375 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E62803C27DD43AF00081375 /* CustomTextField.swift */; };
@@ -105,6 +108,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E15D7B4285B00B000C4B537 /* PersonalProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProfileViewController.swift; sourceTree = "<group>"; };
+		2E15D7B7285B1CB000C4B537 /* DetailProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProfileViewController.swift; sourceTree = "<group>"; };
+		2E15D7B9285B1D6F00C4B537 /* DetailProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProfileTableViewCell.swift; sourceTree = "<group>"; };
 		8E62803727DD3B0C00081375 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		8E62803A27DD3B4400081375 /* TableViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFactory.swift; sourceTree = "<group>"; };
 		8E62803C27DD43AF00081375 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -214,6 +220,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E15D7B3285AFE6100C4B537 /* PersonalPriofile */ = {
+			isa = PBXGroup;
+			children = (
+				2E15D7B4285B00B000C4B537 /* PersonalProfileViewController.swift */,
+			);
+			path = PersonalPriofile;
+			sourceTree = "<group>";
+		};
+		2E15D7B6285B1C9A00C4B537 /* DetailProfile */ = {
+			isa = PBXGroup;
+			children = (
+				2E15D7B7285B1CB000C4B537 /* DetailProfileViewController.swift */,
+				2E15D7B9285B1D6F00C4B537 /* DetailProfileTableViewCell.swift */,
+			);
+			path = DetailProfile;
+			sourceTree = "<group>";
+		};
 		8E62803627DD3A9D00081375 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -853,6 +876,8 @@
 		A4AB99D927C3F7B000D446E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2E15D7B6285B1C9A00C4B537 /* DetailProfile */,
+				2E15D7B3285AFE6100C4B537 /* PersonalPriofile */,
 				8E62803627DD3A9D00081375 /* Cells */,
 				A4AB99DD27C3F7D100D446E7 /* ProfileViewController.swift */,
 			);
@@ -1136,6 +1161,7 @@
 				A4AB99DC27C3F7BF00D446E7 /* ProfileCoordinator.swift in Sources */,
 				A4AB99E227C3F7EA00D446E7 /* MyPlansCoordinator.swift in Sources */,
 				8E86DD162815564D0057577D /* CompanyView.swift in Sources */,
+				2E15D7BA285B1D6F00C4B537 /* DetailProfileTableViewCell.swift in Sources */,
 				A46A1C7B27C8D01E00931FD5 /* StoriesDetailViewCoordinator.swift in Sources */,
 				A4B6DC8227DDCE9F0073597B /* QuestionListFactory.swift in Sources */,
 				DDB39AF9281BCF4E001A45F9 /* CompanyViewModel.swift in Sources */,
@@ -1144,6 +1170,7 @@
 				A46A1C8027C8D78E00931FD5 /* HomeViewControllerFacade.swift in Sources */,
 				A43F477227DD576F00F9A624 /* UIView.swift in Sources */,
 				A4B6DC7327DDB4F20073597B /* CustomNavigationBar.swift in Sources */,
+				2E15D7B5285B00B000C4B537 /* PersonalProfileViewController.swift in Sources */,
 				A4AB99AC27C3AEEC00D446E7 /* Colors .swift in Sources */,
 				A4AB99E627C3F80700D446E7 /* MyPlansViewModel.swift in Sources */,
 				A4AB998027C11F2600D446E7 /* AppCoordinator .swift in Sources */,
@@ -1159,6 +1186,7 @@
 				A4AB999B27C39D2100D446E7 /* OnboardingFacade.swift in Sources */,
 				A4AB998E27C121C500D446E7 /* Presentations .swift in Sources */,
 				A4AB997B27C10ABD00D446E7 /* BaseViewController.swift in Sources */,
+				2E15D7B8285B1CB000C4B537 /* DetailProfileViewController.swift in Sources */,
 				A4B6DC7127DD70170073597B /* StoriesFactory.swift in Sources */,
 				A4AB99A027C39E4900D446E7 /* StringConstants.swift in Sources */,
 				A4AB99B127C3DC2E00D446E7 /* UIButton.swift in Sources */,
@@ -1352,7 +1380,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ADU39R8634;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YoloFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1383,7 +1411,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ADU39R8634;
+				DEVELOPMENT_TEAM = T3YYM93H89;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YoloFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
