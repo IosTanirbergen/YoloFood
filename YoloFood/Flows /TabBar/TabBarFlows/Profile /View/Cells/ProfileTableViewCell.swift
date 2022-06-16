@@ -11,6 +11,7 @@ class ProfileTableViewCell: UITableViewCell {
     
 // MARK: - UI Elements:
     
+    var didPressed:(() -> ())?
     lazy var titleLabel: UILabel = {
         $0.text = "YoloFood"
         $0.font = UIFont.systemFont(ofSize: 36, weight: .heavy)
@@ -29,6 +30,7 @@ class ProfileTableViewCell: UITableViewCell {
     lazy var continueButton: UIButton = {
         $0.setTitle("Продолжить", font: UIFont.systemFont(ofSize: 16, weight: .bold), color: .white)
         $0.backgroundColor = .green
+        $0.addTarget(self, action: #selector(handleButton), for: .touchUpInside)
         return $0
     }(UIButton(type: .system))
     
@@ -37,6 +39,10 @@ class ProfileTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         configureUI()
+    }
+    
+    @objc func handleButton() {
+        self.didPressed?()
     }
 }
 
